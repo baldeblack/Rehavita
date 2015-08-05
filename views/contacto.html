@@ -1,0 +1,62 @@
+<section class="titulo_contacto" data-speed="2" data-type="background">
+    <div class="container contenedor_titulo">
+        <div class="titulo">
+            <h1>CONTACTO</h1>
+        </div>
+    </div>
+</section>
+
+<section class="ubicacion_contacto">
+    <div class="row">
+      <div class="col-md-12" id="map_canvas" ng-controller="mainCtrl">
+        <ui-gmap-google-map center='map.center' zoom='map.zoom'>
+          <ui-gmap-marker coords="marker.coords" options="marker.options" idkey="marker.id" icon="marker.icon">
+          </ui-gmap-marker>
+        </ui-gmap-google-map>
+
+      </div>
+    </div>
+</section>
+
+<section class="contenido_contacto" data-speed="12" data-type="background">
+  <div class="container info-contacto">
+      <br>
+      <div class="row">
+        <div class="col-md-6">
+
+            <form class="form-horizontal form-contacto" action="" method="post">
+              <p>A través de nuestro mail o con sólo marcar el teléfono <b>24039392</b> estaremos encantados de darles a conocer todos nuestros tratamientos y servicios complementarios.</p>
+              <p>Requeridos *</p>
+              <!-- Name input-->
+              <div class="form-group">
+                <label class="control-label" for="name">Nombre*</label>               
+                <input id="name" name="name" type="text" placeholder="Nombre..." class="form-control">
+              </div>
+      
+              <!-- Email input-->
+              <div class="form-group">
+                <label class="control-label" for="email">E-mail*</label>
+                <input id="email" name="email" type="text" placeholder="E-mail..." class="form-control">
+              </div>
+      
+              <!-- Message body -->
+              <div class="form-group">
+                <label class="control-label" for="message">Mensaje</label>
+                <textarea class="form-control" id="message" name="message" placeholder="Mensaje..." rows="5"></textarea>
+              </div>
+      
+              <!-- Form actions -->
+              <div class="form-group">
+                <div class="text-left">
+                  <button type="submit" class="btn btn-primary btn-lg btn-enviar">Enviar</button>
+                </div>
+              </div>
+
+            </form>
+
+        </div>
+        <div class="col-md-6"> 
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat obcaecati omnis quisquam iusto consequatur, ex maiores dolores, fugiat veniam ipsam reprehenderit rem fuga voluptatibus voluptatem quasi nostrum eaque et placeat!</p>
+        </div>
+  </div>
+</section>
