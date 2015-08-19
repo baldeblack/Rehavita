@@ -13,5 +13,82 @@ app.controller("mainCtrl", function($scope, uiGmapGoogleMapApi) {
         draggable: true
       }
     };
+    
+    $scope.servicios = [
+        { img: 'img/convenios/atenas2.png',
+          titulo: 'Atenas',
+          descripcion: '',
+          link:''},
+        { img: 'img/convenios/blue.png',
+          titulo: 'Blue Cross & Blue Shield',
+          descripcion: '',
+          link:''},
+        { img: 'img/convenios/summum.jpg',
+          titulo: 'Summum',
+          descripcion: '',
+          link:''},
+        { img: 'img/convenios/defensor.png',
+          titulo: 'Defensor Sporting',
+          descripcion: '',
+          link:''},
+        { img: 'img/convenios/cosem2.png',
+          titulo: 'Cosem',
+          descripcion: '',
+          link:''},
+        { img: 'img/convenios/pulso2.jpg',
+          titulo: 'Pulso Acompañantes',
+          descripcion: '',
+          link:''},
+       ];
+    
+    $scope.convenios = [
+        { titulo: 'Pulso (10%)'},
+        { titulo: 'Defensor Sporting - Socios (25%)'},
+        { titulo: 'Asociación de funcionarios de Seem (10%)'},
+       ];
+    
+    $scope.sobrenos = {
+        titulo: 'Quienes somos',
+        descripcion: 'Reha-vita es un emprendimiento pensado en llenar espacios que aún no se han cubierto en el área de la Rehabilitación y la calidad de vida, brindando atención grupal o individual según las necesidades de cada paciente, adecuando horarios y tratamiento sin esperas e inconvenientes.<br>El concepto de lograr una adecuada calidad de vida una vez terminado el proceso de Rehabilitación formal, es algo que hoy en día es preocupación de muchas personas que no encuentran un ámbito adecuado a sus necesidades para continuar su actividad física una vez dadas de alta de los servicios de Rehabilitación.<br>Contamos con una planta de 200 m² con consultorios y gimnasios equipados adecuadamente para brindar cualquier servicio de Medicina Física y Rehabilitación.',
+        imagen: '' 
+        
+    };
+    
+    $scope.equipo = {};
+    
+    
+    $scope.homearticulos = [
+        {
+            class:'col-sm-6 col-md-4 wow bounceInLeft',
+            anim_duration:'1s',
+            anim_delay:'0s',
+            imagen:'img/home/fisio.jpg',
+            titulo:'Nuestra Clinica',
+            descipcion:'',
+            link:'#',
+            btn:'Ir a la galeria'
+        },
+        {
+            class:'col-sm-6 col-md-4 wow bounceInUp',
+            anim_duration:'1s',
+            anim_delay:'0.5s',
+            imagen:'img/home/deportiva.jpg',
+            titulo:'Medicina Fisica',
+            descipcion:'',
+            link:'#',
+            btn:'Más información'
+        },
+        {
+            class:'col-sm-6 col-md-4 wow bounceInUp',
+            anim_duration:'1s',
+            anim_delay:'1s',
+            imagen:'img/home/vendaje.jpg',
+            titulo:'Calidad de vida',
+            descipcion:'',
+            link:'#',
+            btn:'Más información'
+        }
+    ];
+    
 });
 

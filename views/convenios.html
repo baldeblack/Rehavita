@@ -6,74 +6,20 @@
     </div>
 </section>
 
-<section class="contenido_convenio" data-speed="12" data-type="background">
+<section class="contenido_convenio" data-speed="12" data-type="background" ng-controller="mainCtrl">
   <div class="container info-convenio">
     <div class="container contenido_principal">
         
         <div class="row">
           <div class="col-md-12">
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-6 col-md-4" ng-repeat="servicio in servicios">
             <div class="thumbnail conv vista">
-              <img src="img/convenios/atenas2.png" alt="...">
+              <img ng-src="{{servicio.img}}" alt="...">
               <div class="mascara">  
-                  <h2>Título</h2>  
-                  <p>Texto</p>  
+                  <h2>{{servicio.titulo}}</h2>  
+                  <p>{{servicio.descripcion}}</p>  
                   <a href="#" class="informacion">Leer Más</a>  
               </div> 
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail conv vista">
-              <img src="img/convenios/blue.png" alt="...">
-              <div class="mascara">  
-                  <h2>Título</h2>  
-                  <p>Texto</p>  
-                  <a href="#" class="informacion">Leer Más</a>  
-              </div> 
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail conv vista">
-              <img src="img/convenios/summum.jpg" alt="...">
-              <div class="mascara">  
-                  <h2>Título</h2>  
-                  <p>Texto</p>  
-                  <a href="#" class="informacion">Leer Más</a>  
-              </div> 
-            </div>
-          </div>
-          </div>
-          <div class="col-md-12">
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail conv vista">
-              <img src="img/convenios/defensor.png" alt="...">
-              <div class="mascara">  
-                  <h2>Título</h2>  
-                  <p>Texto</p>  
-                  <a href="#" class="informacion">Leer Más</a>  
-              </div> 
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail conv vista">
-              <img src="img/convenios/cosem2.png" alt="...">
-              <div class="mascara"></div>
-                <div class="contenido">
-                    <h2>Título</h2>  
-                    <p>Texto</p>  
-                    <a href="#" class="informacion">Leer Más</a>    
-                </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail conv vista">
-              <img src="img/convenios/pulso2.jpg" alt="...">
-              <div class="mascara"></div>
-                <div class="contenido">
-                    <h2>Título</h2>  
-                    <p>Texto</p>  
-                    <a href="#" class="informacion">Leer Más</a>    
-                </div>
             </div>
           </div>
           </div>
@@ -83,9 +29,7 @@
           <div class="panel-heading"><h3>Convenios actuales</h3></div>
 
           <ul class="list-group">
-            <li class="list-group-item"><strong>Pulso (10%)</strong></li>
-            <li class="list-group-item"><strong>Defensor Sporting - Socios (25%)</strong></li>
-            <li class="list-group-item"><strong>Asociación de funcionarios de Seem (10%)</strong></li>
+            <li class="list-group-item" ng-repeat="convenio in convenios"><strong>{{convenio.titulo}}</strong></li>
           </ul>
         </div>
 

@@ -42,53 +42,19 @@
           </div> 
         </div>
 
-        <section class="principal">
+        <section class="principal" ng-controller="mainCtrl">
           <div class="container contenido_principal">
             <div class="row">
-              <div class="col-sm-6 col-md-4 wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0s">
+              <div ng-repeat="articulo in homearticulos" class="{{articulo.class}}" data-wow-duration="{{articulo.anim_duration}}" data-wow-delay="{{articulo.anim_delay}}">
                 <div class="thumbnail">
-                  <img src="img/home/fisio.jpg" alt="...">
+                  <img ng-src="{{articulo.imagen}}" alt="...">
                   <div class="caption">
-                    <h3>Rehabilitaci&oacute;n</h3>
-                    <p></p>
-                    <p><a href="#" class="btn btn-pagina btn-lg" role="button">Más información</a></p>
+                    <h3>{{articulo.titulo}}</h3>
+                    <p>{{articulo.descripcion}}</p>
+                    <p><a href="{{articulo.link}}" class="btn btn-pagina btn-lg" role="button">{{articulo.btn}}</a></p>
                   </div>
                 </div>
               </div>
-
-              <div class="col-sm-6 col-md-4 wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-                <div class="thumbnail">
-                  <img src="img/home/deportiva.jpg" alt="...">
-                  <div class="caption">
-                    <h3>Medicina Fisica</h3>
-                    <p></p>
-                    <p><a href="#" class="btn btn-pagina btn-lg" role="button">Más información</a></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-md-4 wow bounceInRight" data-wow-duration="1s" data-wow-delay="1s">
-                <div class="thumbnail">
-                  <img src="img/home/vendaje.jpg" alt="...">
-                  <div class="caption">
-                    <h3>Calidad de vida</h3>
-                    <p></p>
-                    <p><a href="#" class="btn btn-pagina btn-lg" role="button">Más información</a></p>
-                  </div>
-                </div>
-              </div>
-        <!--  <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                  <img src="img/home/osteopatia.jpg" alt="...">
-                  <div class="caption">
-                    <h3>Osteopatía</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a href="#" class="btn btn-pagina btn-lg" role="button">Más información</a></p>
-                  </div>
-                </div>
-              </div> -->
-
-
             </div>
           </div>
           <div class="container">
