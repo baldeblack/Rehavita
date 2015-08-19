@@ -62,10 +62,10 @@ app.controller("mainCtrl", function($scope, uiGmapGoogleMapApi) {
             class:'col-sm-6 col-md-4 wow bounceInLeft',
             anim_duration:'1s',
             anim_delay:'0s',
-            imagen:'img/home/fisio.jpg',
+            imagen:'img/galeria/1.jpg',
             titulo:'Nuestra Clinica',
             descipcion:'',
-            link:'#',
+            link:'#/galeria',
             btn:'Ir a la galeria'
         },
         {
@@ -87,6 +87,42 @@ app.controller("mainCtrl", function($scope, uiGmapGoogleMapApi) {
             descipcion:'',
             link:'#',
             btn:'Más información'
+        }
+    ];
+    
+    
+    $scope.imgenesGaleria = [
+        {
+            titulo:'',
+            ruta:'img/galeria/1.jpg'
+        },
+        {
+            titulo:'',
+            ruta:'img/galeria/2.jpg'
+        },
+        {
+            titulo:'',
+            ruta:'img/galeria/3.jpg'
+        },
+        {
+            titulo:'',
+            ruta:'img/galeria/5.jpg'
+        },
+{
+            titulo:'',
+            ruta:'img/galeria/10.jpg'
+        },
+        {
+            titulo:'',
+            ruta:'img/galeria/7.jpg'
+        },
+        {
+            titulo:'',
+            ruta:'img/galeria/8.jpg'
+        },
+        {
+            titulo:'',
+            ruta:'img/galeria/9.jpg'
         }
     ];
     

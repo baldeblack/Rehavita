@@ -668,3 +668,8 @@ footer{
 .contenedor_galeria{
     padding-top: 20px;
 }
+
+.grouped_elements a img{
+    width: 320px;
+    height: 320px;
+}
