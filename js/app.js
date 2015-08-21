@@ -18,20 +18,14 @@ var configApp = function($routeProvider){
     .when("/galeria",{
         templateUrl: "views/galeria.html"
     })    
-    .when("medicinafisica/equipamiento",{
-        templateUrl: "views/equipamiento.html"
+    .when("/medicinafisica",{
+        templateUrl: "views/mfisica.html"
     })
-    .when("/fisioterapia",{
-        templateUrl: "views/fisioterapia.html"
+    .when("/rehabilitacion",{
+        templateUrl: "views/rehabilitacion.html"
     })
-    .when("/adultomayor",{
-        templateUrl: "views/adultomayor.html"
-    })
-    .when("/reumatologia",{
-        templateUrl: "views/reumatologia.html"
-    })
-    .when("/traumatologia",{
-        templateUrl: "views/traumatologia.html"
+    .when("/calidad",{
+        templateUrl: "views/calidad.html"
     })
     .otherwise({ reditrectTo : "/" });
 }

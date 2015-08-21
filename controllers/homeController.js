@@ -1,6 +1,7 @@
 app.controller("mainCtrl", function($scope, uiGmapGoogleMapApi) {
 
     $scope.map = { center: { latitude: -34.902250, longitude: -56.175044 }, zoom: 18 };
+    $scope.options = {scrollwheel: false,draggable: false};
     $scope.marker = {
       id: 0,
       coords: {
@@ -94,35 +95,118 @@ app.controller("mainCtrl", function($scope, uiGmapGoogleMapApi) {
     $scope.imgenesGaleria = [
         {
             titulo:'',
+            class:'img-responsive',
             ruta:'img/galeria/1.jpg'
         },
         {
             titulo:'',
+            class:'img-responsive recortada',
             ruta:'img/galeria/2.jpg'
         },
         {
             titulo:'',
+            class:'img-responsive',
             ruta:'img/galeria/3.jpg'
         },
         {
             titulo:'',
+            class:'img-responsive',
             ruta:'img/galeria/5.jpg'
-        },
-{
-            titulo:'',
-            ruta:'img/galeria/10.jpg'
         },
         {
             titulo:'',
+            class:'img-responsive',
             ruta:'img/galeria/7.jpg'
         },
         {
             titulo:'',
+            class:'img-responsive',
             ruta:'img/galeria/8.jpg'
         },
         {
             titulo:'',
+            class:'img-responsive',
             ruta:'img/galeria/9.jpg'
+        },
+        {
+            titulo:'',
+            class:'img-responsive',
+            ruta:'img/galeria/4.jpg'
+        },
+        {
+            titulo:'',
+            class:'img-responsive',
+            ruta:'img/galeria/11.jpg'
+        },
+        {
+            titulo:'',
+            class:'img-responsive',
+            ruta:'img/galeria/12.jpg'
+        },
+        {
+            titulo:'',
+            class:'img-responsive',
+            ruta:'img/galeria/13.jpg'
+        },
+        {
+            titulo:'',
+            class:'img-responsive',
+            ruta:'img/galeria/14.jpg'
+        },
+        {
+            titulo:'',
+            class:'img-responsive',
+            ruta:'img/galeria/15.jpg'
+        },
+        {
+            titulo:'',
+            class:'img-responsive',
+            ruta:'img/galeria/16.jpg'
+        },
+        {
+            titulo:'',
+            class:'img-responsive',
+            ruta:'img/galeria/18.jpg'
+        },
+        {
+            titulo:'',
+            class:'img-responsive',
+            ruta:'img/galeria/19.jpg'
+        },
+        {
+            titulo:'',
+            class:'img-responsive',
+            ruta:'img/galeria/20.jpg'
+        },
+        {
+            titulo:'',
+            class:'img-responsive',
+            ruta:'img/galeria/21.jpg'
+        },
+        {
+            titulo:'',
+            class:'img-responsive',
+            ruta:'img/galeria/22.jpg'
+        },
+        {
+            titulo:'',
+            class:'img-responsive',
+            ruta:'img/galeria/23.jpg'
+        },
+        {
+            titulo:'',
+            class:'img-responsive',
+            ruta:'img/galeria/24.jpg'
+        },
+        {
+            titulo:'',
+            class:'img-responsive',
+            ruta:'img/galeria/25.jpg'
+        },
+        {
+            titulo:'',
+            class:'img-responsive',
+            ruta:'img/galeria/26.jpg'
         }
     ];
     
