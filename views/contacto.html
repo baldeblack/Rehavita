@@ -9,7 +9,7 @@
 <section class="ubicacion_contacto">
     <div class="row">
       <div class="col-md-12" id="map_canvas" ng-controller="mainCtrl">
-        <ui-gmap-google-map center='map.center' zoom='map.zoom'>
+        <ui-gmap-google-map center='map.center' zoom='map.zoom' draggable="false" options="options" >
           <ui-gmap-marker coords="marker.coords" options="marker.options" idkey="marker.id" icon="marker.icon">
           </ui-gmap-marker>
         </ui-gmap-google-map>
