@@ -165,10 +165,10 @@ body{
 /********************************/
 .fade-carousel {
     position: relative;
-    height: 100vh;
+    height: 80vh;
 }
 .fade-carousel .carousel-inner .item {
-    height: 100vh;
+    height: 80vh;
 }
 .fade-carousel .carousel-indicators > li {
     margin: 0 2px;
@@ -258,7 +258,7 @@ body{
 .fade-carousel .slides .slide-1, 
 .fade-carousel .slides .slide-2,
 .fade-carousel .slides .slide-3 {
-  height: 100vh;
+  height: 80vh;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -322,7 +322,7 @@ body{
 }
 
 .titulo_somos{
-    background: #C70780;
+    background: url(../img/eq2.jpg) no-repeat 50% 0 fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -638,3 +638,60 @@ footer{
     width: 280px;
     height: 210px;
 }
+
+
+/* -------------- SOMOS ------------- */
+
+
+.contenedor-tabs{
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: 30px !important;
+}
+
+.contenedor-tabs hr{
+    border-color: #A52998;
+}
+
+.contenedor-tabs h2{
+    color: #A52998;
+}
+
+.info-somos{
+    margin-bottom: 50px;
+}
+
+.nav-tabs li a{
+    border-radius: 0px !important;
+    color: #333333;
+}
+
+.nav-tabs li a:hover{
+    color: #333333;
+    border-bottom-color: #333333;
+    background: transparent;
+}
+
+.nav-tabs li.active a{
+    font-size: 16px !important;
+    border-left-color: rgba(209,52,164,0.8) !important;
+    border-bottom-color: rgba(209,52,164,0.8) !important;
+    border-top-color: rgba(209,52,164,0.8) !important;
+    color: #A52998 !important;
+
+}
+
+.nav-tabs li.active a:hover{
+    border-left-color: rgba(209,52,164,0.8);
+    border-bottom-color: rgba(209,52,164,0.8);
+    border-top-color: rgba(209,52,164,0.8);
+    color: #A52998;
+
+}
+
+.equipo-stilo{
+    border: 1px solid red;
+    
+}
+
+

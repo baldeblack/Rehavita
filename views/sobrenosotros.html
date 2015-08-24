@@ -1,4 +1,4 @@
-<section class="titulo_equipo" data-speed="2" data-type="background">
+<section class="titulo_somos" data-speed="2" data-type="background">
     <div class="container contenedor-titulo">
     	<div class="titulo">
     		<h1>SOBRE NOSOTROS</h1>
@@ -6,8 +6,62 @@
     </div>
 </section>
 
-<section class="contenido_equipo" data-speed="12" data-type="background">
-  <div class="container info-equipo">
-      <h1>ESTOY EN LA SECCION EQUIPO</h1>
+<section class="contenido_somos" data-speed="12" data-type="background">
+  <div class="container info-somos">
+      <div class="contenedor-tabs" ng-controller="mainCtrl">
+       <div class="col-xs-3"> <!-- required for floating -->
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs tabs-left">
+              <li class="active"><a showtab="" href="#home" data-toggle="tab">Quienes somos</a></li>
+              <li><a showtab="" href="#profile" data-toggle="tab">Nuestro Equipo</a></li>
+              <li><a showtab="" href="#inst" data-toggle="tab">Instalaciones</a></li>
+            </ul>
+        </div>
+
+        <div class="col-xs-9">
+            <!-- Tab panes -->
+            <div class="tab-content">
+                  <div class="tab-pane active" id="home">
+                    <h2>QUIENES SOMOS</h2>
+                    <hr>
+                    <p>Reha-vita es un emprendimiento pensado en llenar espacios que aún no se han cubierto en el área de la Rehabilitación y la calidad de vida, brindando atención grupal o individual según las necesidades de cada paciente, adecuando horarios y tratamiento sin esperas e inconvenientes.</p>
+                    <p>El concepto de lograr una adecuada calidad de vida una vez terminado el proceso de Rehabilitación formal, es algo que hoy en día es preocupación de muchas personas que no encuentran un ámbito adecuado a sus necesidades para continuar su actividad física una vez dadas de alta de los servicios de Rehabilitación.</p>
+                    <p>Contamos con una planta de 200 m² con consultorios y gimnasios equipados adecuadamente para brindar cualquier servicio de Medicina Física y Rehabilitación.</p>
+                
+                  </div>
+                  <div class="tab-pane" id="profile">
+                      <h2>NUESTRO EQUIPO DE TRABAJO</h2>
+                      <hr>
+                      <div ng-repeat="persona in personasEquipo" class="{{persona.class}}">
+                          {{persona.img}}
+                          <h3>{{persona.nombre}}</h3>
+                          <h4><small>{{persona.profesion}}</small></h4>
+                          <h4>{{persona.area}}</h4>
+                      </div>
+                  </div>
+                  <div class="tab-pane" id="inst">
+                  <h2>INSTALACIONES</h2>
+                  <hr>
+                  </div>
+            </div>
+        </div> 
+      </div>
+       
+       <!-- <ul class="nav nav-tabs">
+            <li class="active"><a showtab="" href="#standardNav">Standard</a></li>
+            <li><a showtab="" href="#quickadd">Quick Add</a></li>
+            <li><a showtab="" href="#juja">Juja</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="calendarNav tab-pane fade in active" id="standardNav">
+                Pane 1
+            </div>
+            <div id="quickadd" class="tab-pane fade">
+                Pane 2
+            </div>
+            <div id="juja" class="tab-pane fade">
+                Pane 3
+            </div>
+        </div>-->
   </div>
 </section>
