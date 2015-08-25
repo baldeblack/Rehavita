@@ -63,7 +63,7 @@ app.controller("mainCtrl", function ($scope, uiGmapGoogleMapApi) {
             class: 'col-sm-6 col-md-4 wow bounceInLeft',
             anim_duration: '1s',
             anim_delay: '0s',
-            imagen: 'img/galeria/1.jpg',
+            imagen: 'img/articulos/1.jpg',
             titulo: 'Nuestra Clinica',
             descipcion: '',
             link: '#/galeria',
@@ -246,6 +246,33 @@ app.controller("mainCtrl", function ($scope, uiGmapGoogleMapApi) {
             profesion: 'Fisiatra',
             area: '',
             img: ''
+        }
+        
+    ];
+    
+    
+    $scope.myInterval = 3000;
+    $scope.slides = [
+        {
+          image: 'img/equipo/1.jpg'
+        },
+        {
+          image: 'img/equipo/2.jpg'
+        },
+        {
+          image: 'img/equipo/3.jpg'
+        }
+    ];
+    
+    $scope.insImagenes = [
+        {
+            img: 'img/instalaciones/1.jpg'
+        },
+        {
+            img: 'img/instalaciones/2.jpg'
+        },
+        {
+            img: 'img/instalaciones/4.jpg'
         }
         
     ];

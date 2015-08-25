@@ -379,6 +379,7 @@ body{
     height: 40px;
     border-color: #FC03E3 !important;
     outline: 0 !important;
+    box-shadow: none !important;
 }
 
 /*
@@ -500,6 +501,13 @@ footer{
 }
 /*----------------- HOME --------------*/
 
+/* -------------- CONTACTO ------------- */
+.mapas{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* -------------- FIN | CONTACTO ------------- */
 
 /*----------------- CONVENIOS ----------------*/
 .conv img{
@@ -690,8 +698,45 @@ footer{
 }
 
 .equipo-stilo{
-    border: 1px solid red;
-    
+      
 }
 
+.slider-equipo{
+    margin-top: 10px;
+}
 
+.slider-equipo .carousel-inner {
+  height: 400px !important;  
+}
+.slider-equipo .carousel-indicators{
+    display: none;
+}
+
+.cita{
+    background: white;
+    position: fixed;
+    top:-80px;
+    right: 35%;
+}
+.activo.cita{
+    top:0px;
+}
+.info-cita{
+    padding: 10px;
+    text-align: center;
+}
+.cita a{
+    color:white;
+    background: #A52998;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none !important;
+}
+.cita a:hover{
+    border-color: #A52998;
+    background: #272822;
+    color: #A52998;
+}
+.cita a:focus{
+    box-shadow: none !important;
+}

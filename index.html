@@ -25,8 +25,8 @@
         <script type="text/javascript" src="js/componentes/wow.min.js"></script>
         <script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
         <script type="text/javascript" src="fancybox/jquery.fancybox.pack-v=2.1.5.js"></script>
-
-
+        <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.5.0/holder.min.js"></script>
         <script type="text/javascript" src="js/componentes/reha-vita.js"></script>
         
         <!-- APP -->
@@ -40,11 +40,11 @@
         <!-- DIRECTIVAS -->
         <script type="text/javascript" src="directives/tabs.js"></script>
         
-        <!-- COMPONENTES -->
-        <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+        <!-- MODULOS -->
+        <script type="text/javascript" src="js/ui-bootstrap.js"></script>
         <script type="text/javascript" src="js/lodash.underscore.min.js"></script>
         <script type="text/javascript" src="js/angular-google-maps.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.5.0/holder.min.js"></script>
+        
 
     </head>
     <body>
@@ -79,7 +79,8 @@
                     </div>
                     <div class="col-lg-8 col-lg-offset-4 datos">
                         <div class="info">
-                        <p><!--<i class="fa fa-fw fa-home"></i> Juan Antonio Rodriguez 1464-1468 apto 603 / --><i class="fa fa-fw fa-phone"></i> (+598) 02 4039392 / <i class="fa fa-fw fa-envelope"></i> administracion@rehavita.com.uy</p>
+                            <p class="text-right"><i class="fa fa-fw fa-phone"></i> (+598) 02 4039392</p>
+                            <p><i class="fa fa-fw fa-envelope"></i> administracion@rehavita.com.uy</p>
                         </div>
                     </div>   
                 </div>
@@ -131,6 +132,13 @@
                     </div>
                 </div>
             </nav>
+<!--            <div class="cita">
+                <div class="info-cita">
+                    <p><i class="fa fa-fw fa-phone"></i> (+598) 02 4039392</p>
+                    <p><i class="fa fa-fw fa-envelope"></i> info@rehavita.com.uy</p>
+                </div>
+                <a class="btn" id="btn-cita">PIDE UNA CITA</a>
+            </div>-->
         </div>
                 
         <div ng-view></div>           
@@ -143,10 +151,9 @@
                 </div>
                 <div class="col-md-4 vinculos_footer">
                     <a href="#/nosotros">Sobre Nosotros</a>
-                    <a href="#/fisioterapia">Medicina Fisica</a>
-                    <a href="#/reumatologia">Reumatologia</a>
-                    <a href="#/traumatologia">Traumatologia</a>
-                    <a href="#/adultomayor">Adulto Mayor</a>
+                    <a href="#/medicinafisica">Medicina Fisica</a>
+                    <a href="#/rehabilitacion">Rehabilitacion</a>
+                    <a href="#/calidad">Calidad de Vida</a>
                     <a href="#/convenios">Convenios</a>
                     <a href="#/contacto">Contacto</a>
                 </div>

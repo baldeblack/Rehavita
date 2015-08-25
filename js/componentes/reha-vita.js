@@ -1,6 +1,13 @@
 $(document).ready(function() {
     //var map; 
-    //$('[data-toggle="tooltip"]').tooltip();
+    //$('[data-toggle="tooltip"]').tooltip();        
+    $('#btn-cita').click(function () {
+        if ($('.cita').hasClass("activo")) {
+            $('.cita').removeClass('activo');
+        } else {
+            $('.cita').addClass('activo');
+        }
+    });    
 
     var wow = new WOW(
       {

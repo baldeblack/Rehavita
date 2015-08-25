@@ -30,18 +30,37 @@
                 
                   </div>
                   <div class="tab-pane" id="profile">
-                      <h2>NUESTRO EQUIPO DE TRABAJO</h2>
+                      <h2>NUESTRO EQUIPO</h2>
                       <hr>
                       <div ng-repeat="persona in personasEquipo" class="{{persona.class}}">
+                         <div class="thumbnail">
                           {{persona.img}}
                           <h3>{{persona.nombre}}</h3>
                           <h4><small>{{persona.profesion}}</small></h4>
                           <h4>{{persona.area}}</h4>
+                         </div>
                       </div>
+                      <div class="col-md-offset-1 col-md-10 slider-equipo">
+                        <div id="slides_control">
+                            <div>
+                              <carousel interval="myInterval">
+                                <slide ng-repeat="slide in slides" active="slide.active">
+                                  <img ng-src="{{slide.image}}" style="width:100%;height:100%;">
+                                  <div class="carousel-caption">
+                                    <!--<h4>Slide {{$index+1}}</h4>-->
+                                  </div>
+                                </slide>
+                              </carousel>
+                            </div>
+                        </div>
+                      </div>  
                   </div>
                   <div class="tab-pane" id="inst">
-                  <h2>INSTALACIONES</h2>
-                  <hr>
+                      <h2>INSTALACIONES</h2>
+                      <hr>
+                      <div class="thumbnail" ng-repeat="inst in insImagenes" >
+                          <img ng-src="{{inst.img}}" alt="">
+                      </div>
                   </div>
             </div>
         </div> 
