@@ -5,6 +5,16 @@
     	</div>
     </div>
 </section>
-<div class="container contenedor_galeria" ng-controller="mainCtrl">
-
+<div class="container contenedor_equipamiento" ng-controller="mainCtrl">
+    <h2>Equipamiento</h2>
+    <hr>
+    <div class="col-md-4 equipos" ng-repeat="equipo in equipos">
+        <div class="thumbnail">
+           <div class="contendor-img-thumbnail border">
+               <img ng-src="{{equipo.img}}" alt="">
+           </div> 
+           <h4 class="text-center">{{equipo.titulo}}</h4>
+           <p>{{equipo.descripcion}}</p>
+        </div>
+    </div>
 </div>

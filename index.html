@@ -23,6 +23,7 @@
         <script type="text/javascript" src="js/componentes/jquery.js"></script>
         <script type="text/javascript" src="js/componentes/bootstrap.js"></script>
         <script type="text/javascript" src="js/componentes/wow.min.js"></script>
+        <script type="text/javascript" src="js/componentes/hover-dropdown.js"></script>
         <script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
         <script type="text/javascript" src="fancybox/jquery.fancybox.pack-v=2.1.5.js"></script>
         <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
@@ -69,7 +70,7 @@
                                 <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i> </a>
                             </li>
                             <li>
                                 <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
@@ -79,15 +80,16 @@
                     </div>
                     <div class="col-lg-8 col-lg-offset-4 datos">
                         <div class="info">
-                            <p class="text-right"><i class="fa fa-fw fa-phone"></i> (+598) 02 4039392</p>
-                            <p><i class="fa fa-fw fa-envelope"></i> administracion@rehavita.com.uy</p>
+<!--                            <p class="text-right"><a class="btn-social btn-outline"><i class="fa fa-fw fa-phone"></i></a><span> (+598) 02 4039392</span></p>-->
+                            <p class="text-right"><i class="fa fa-fw fa-phone"></i>(+598) 2403 9392</p>
+                           <!-- <p><i class="fa fa-fw fa-envelope"></i> administracion@rehavita.com.uy</p>-->
                         </div>
                     </div>   
                 </div>
                 <div class="container-fluid contenedor-menu">
                     <div class="container" >
                         <div class="collapse navbar-collapse" id="menu">
-                            <ul class="nav navbar-nav center-block">
+                            <ul class="nav navbar-nav menu-principal center-block">
                                 <li><a href="#/">INICIO</a></li>
                                 <li><a href="#/nosotros">SOBRE NOSOTROS</a></li>
                                 <!-- <li class="dropdown">
@@ -100,7 +102,7 @@
                                     </ul>
                                 </li> -->
                                 <li class="dropdown">
-                                    <a class="dropdown-toggle" data-toggle="dropdown">TRATAMIENTOS <span class="caret"></span></a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="50" data-close-others="false">TRATAMIENTOS <span class="caret"></span></a>
                                     <ul class="dropdown-menu menu" role="menu">
                                         <li class="">
                                             <a href="#/medicinafisica">Medicina Fisica</a>

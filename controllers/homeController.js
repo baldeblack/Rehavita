@@ -65,7 +65,7 @@ app.controller("mainCtrl", function ($scope, uiGmapGoogleMapApi) {
             anim_delay: '0s',
             imagen: 'img/articulos/1.jpg',
             titulo: 'Nuestra Clinica',
-            descipcion: '',
+            descripcion: 'En nuestras clínicas contamos con los medios técnicos más avanzados y los mejores profesionales para satisfacer por completo las necesidades de nuestros pacientes.',
             link: '#/galeria',
             btn: 'Ir a la galeria'
         },
@@ -74,20 +74,21 @@ app.controller("mainCtrl", function ($scope, uiGmapGoogleMapApi) {
             anim_duration: '1s',
             anim_delay: '0.5s',
             imagen: 'img/home/deportiva.jpg',
-            titulo: 'Medicina Fisica',
-            descipcion: '',
+            titulo: 'Preguntas Frecuentes',
+            descripcion: '',
             link: '#',
-            btn: 'Más información'
-        },
+            btn: 'Ver noticias'
+        }
+    ];
+    
+    $scope.noticias = [
         {
-            class: 'col-sm-6 col-md-4 wow bounceInUp',
-            anim_duration: '1s',
-            anim_delay: '1s',
-            imagen: 'img/home/vendaje.jpg',
-            titulo: 'Calidad de vida',
-            descipcion: '',
-            link: '#',
-            btn: 'Más información'
+            imagen: 'img/noticias/vendaje.jpg',
+            fecha: '19/12/2014',
+            titulo: 'Nos Mudamos!!',
+            descripcion: 'Rehavita se reinventa....nuevas instalaciones, y la misma buena onda. Nos podés encontrar en Juan Antonio Rodríguez 1464 /603 (frente al Ministerio de Salud Pública).',
+            link: '#/noticias',
+            btn: 'Ver más'
         }
     ];
     
@@ -276,6 +277,26 @@ app.controller("mainCtrl", function ($scope, uiGmapGoogleMapApi) {
         }
         
     ];
+    
+    $scope.equipos = [
+        {
+            img: 'img/equipamiento/1.jpg',
+            titulo: 'Ultrasonido',
+            descipcion: ''
+        },
+        {
+            img: 'img/equipamiento/2.jpg',
+            titulo: 'Magnetoterapia',
+            descipcion: ''
+        },
+        {
+            img: 'img/equipamiento/3.jpg',
+            titulo: 'Sin titulo',
+            descipcion: ''
+        }
+    ];
+    
+    
     
 });
 

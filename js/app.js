@@ -27,8 +27,17 @@ var configApp = function($routeProvider){
     .when("/calidad",{
         templateUrl: "views/calidad.html"
     })
+    .when("/noticias",{
+        templateUrl: "views/noticias.html"
+    })
     .otherwise({ reditrectTo : "/" });
 }
 
 //creamos el modulo y le aplicamos la configuración
 var app = angular.module("rehavita", ['ngRoute','uiGmapgoogle-maps','ui.bootstrap']).config(configApp);
+
+app.filter('reverse', function() {
+  return function(items) {
+    return items.slice().reverse();
+  };
+});

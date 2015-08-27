@@ -1,0 +1,23 @@
+
+<div class="container contenedor_equipamiento" ng-controller="mainCtrl">
+     <div class="col-sm-12 col-md-12 contenedor-noticias">
+          <div ng-repeat="noticia in noticias | reverse">
+            <div class="thumbnail thumb_noticias">
+            <div class="row">
+             <div class="col-md-12">
+              <div class="col-md-5">
+                  <img ng-src="{{noticia.imagen}}" class="img-responsive" alt="...">
+              </div>
+              <div class="col-md-7 caption">
+                <p class="text-right">{{noticia.fecha}}</p>
+                <h3>{{noticia.titulo}}</h3>
+                <hr>
+                <p>{{noticia.descripcion}}</p>
+              </div>
+             <!-- <a href="{{noticia.link}}" class="btn btn-pagina btn-lg" role="button">{{noticia.btn}}</a>-->
+            </div>
+            </div>
+            </div>
+          </div>
+      </div>
+</div>
