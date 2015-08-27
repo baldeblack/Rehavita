@@ -30,6 +30,9 @@ var configApp = function($routeProvider){
     .when("/noticias",{
         templateUrl: "views/noticias.html"
     })
+    .when("/preguntas",{
+        templateUrl: "views/preguntas.html"
+    })
     .otherwise({ reditrectTo : "/" });
 }
 

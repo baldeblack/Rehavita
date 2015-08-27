@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
-
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
 .borde{
     border: 1px solid red;
 }
@@ -332,6 +332,17 @@ body{
     .hero h1 { font-size: 4em; }    
 }
 
+.frase-home{
+    background-color: rgba(0,0,0,.5);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.frase-home h1{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+}
 
 .titulo_contacto{
     background: url(../img/telefono-contacto.png) no-repeat 50% 0 fixed;
@@ -344,8 +355,19 @@ body{
     height: 250px;
 }
 
-.titulo_contacto h1,.titulo_convenio h1, .titulo_equipo h1, .titulo_somos h1{
+.titulo_contacto h1,.titulo_convenio h1, .titulo_equipo h1, .titulo_somos h1,.titulo_preguntas h1{
     color: white;
+}
+
+.titulo_preguntas{
+    background: url(../img/preguntas.jpg) no-repeat 50% 0 fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+
+    height: 250px;
 }
 
 .titulo_convenio{
@@ -521,8 +543,8 @@ footer{
     background: #A52998;
 }
 .copyright{
-    background-color: black;
-    font-color:white;
+    background-color: black; 
+    color:white;
 }
 
 
@@ -684,7 +706,7 @@ footer{
 .contenedor_galeria{
     padding-top: 20px;
 }
-
+.contenedor_preguntas{padding-top: 20px;}
 .grouped_elements{
     width: 280px;
     height: 220px;

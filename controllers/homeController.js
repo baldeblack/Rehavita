@@ -73,11 +73,11 @@ app.controller("mainCtrl", function ($scope, uiGmapGoogleMapApi) {
             class: 'col-sm-6 col-md-4 wow bounceInUp',
             anim_duration: '1s',
             anim_delay: '0.5s',
-            imagen: 'img/home/deportiva.jpg',
+            imagen: 'img/home/preguntas.png',
             titulo: 'Preguntas Frecuentes',
-            descripcion: '',
-            link: '#',
-            btn: 'Ver noticias'
+            descripcion: 'Preguntas que usualmente los clientes nos preguntan con frecuencia.',
+            link: '#/preguntas',
+            btn: 'Ver preguntas'
         }
     ];
     
