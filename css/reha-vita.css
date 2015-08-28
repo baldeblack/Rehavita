@@ -333,7 +333,7 @@ body{
 }
 
 .frase-home{
-    background-color: rgba(0,0,0,.5);
+    background: linear-gradient(to right, rgba(209, 52, 164, 0.9),  rgba(209, 52, 164, 0.9)), url(../img/cubos.jpg);
     padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 20px;
@@ -341,6 +341,20 @@ body{
 }
 .frase-home h1{
     font-family: 'Dancing Script', cursive;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+    color: white;
+}
+.frase-reha{
+    background: linear-gradient(to right, rgba(209, 52, 164, 0.9),  rgba(209, 52, 164, 0.9)), url(../img/cubos.jpg);
+    /*background-color: #272822;*/
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.frase-reha h2{
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
     color: white;
 }
 
@@ -355,7 +369,7 @@ body{
     height: 250px;
 }
 
-.titulo_contacto h1,.titulo_convenio h1, .titulo_equipo h1, .titulo_somos h1,.titulo_preguntas h1{
+.titulo_contacto h1,.titulo_convenio h1, .titulo_equipo h1, .titulo_somos h1,.titulo_preguntas h1,.titulo_calidad h1,.titulo_reha h1{
     color: white;
 }
 
@@ -372,6 +386,26 @@ body{
 
 .titulo_convenio{
     background: url(../img/convenio3.jpg) no-repeat 50% 0 fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+
+    height: 250px;
+}
+.titulo_calidad{
+        background: url(../img/adulto.jpg) no-repeat 50% 0 fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+
+    height: 250px;
+}
+.titulo_reha{
+        background: url(../img/rehabilitacion.jpg) no-repeat 50% 0 fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -578,6 +612,34 @@ footer{
     margin: 0px;
 }
 
+.contacto-item{
+    padding-bottom: 20px;
+    font-size: 14px;
+    color: #A52998;
+}
+.contacto-item h2{
+
+    letter-spacing: 1px !important;
+}
+
+.contacto-item p{
+    color: #272822;
+}
+.icon{
+    position: relative;
+    margin: auto;
+    border-radius: 50%;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    padding: 10px !important;
+    border: 1px solid #A52998;
+}
+.icon i{
+    position: relative;
+    margin: 10px;
+}
+
 /* -------------- FIN | CONTACTO ------------- */
 
 /*----------------- CONVENIOS ----------------*/
@@ -706,7 +768,7 @@ footer{
 .contenedor_galeria{
     padding-top: 20px;
 }
-.contenedor_preguntas{padding-top: 20px;}
+.contenedor_preguntas{padding-top: 20px; padding-bottom: 20px;}
 .grouped_elements{
     width: 280px;
     height: 220px;
@@ -740,18 +802,18 @@ footer{
     margin-bottom: 50px;
 }
 
-.nav-tabs li a{
+.contenedor-tabs .nav-tabs li a{
     border-radius: 0px !important;
     color: #333333;
 }
 
-.nav-tabs li a:hover{
+.contenedor-tabs .nav-tabs li a:hover{
     color: #333333;
     border-bottom-color: #333333;
     background: transparent;
 }
 
-.nav-tabs li.active a{
+.contenedor-tabs .nav-tabs li.active a{
     font-size: 16px !important;
     border-left-color: rgba(209,52,164,0.8) !important;
     border-bottom-color: rgba(209,52,164,0.8) !important;
@@ -760,7 +822,7 @@ footer{
 
 }
 
-.nav-tabs li.active a:hover{
+.contenedor-tabs .nav-tabs li.active a:hover{
     border-left-color: rgba(209,52,164,0.8);
     border-bottom-color: rgba(209,52,164,0.8);
     border-top-color: rgba(209,52,164,0.8);
@@ -814,6 +876,23 @@ footer{
 
 
 /* ----- MEDICINA FISICA ----- */
+
+.frase-mfisica{
+    background: linear-gradient(to right, rgba(209, 52, 164, 0.9),  rgba(209, 52, 164, 0.9)), url(../img/cubos.jpg);
+    /*background-color: rgba(209, 52, 164, 0.8);*/
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.frase-mfisica h1{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+}
+.contenedor_equipamiento{
+    padding-top: 20px;
+}
 .contenedor_equipamiento h2{
     color: #A52998;
 }
@@ -823,7 +902,58 @@ footer{
 .contendor-img-thumbnail{
     height: 230px;
 }
+
+.equipos .thumbnail{
+    border-color: #A52998;
+}
+
 .equipos img{
    width: 100%;
    height: 100%;
 }
+
+.contenedor-porq{
+    margin-top: 25px;
+}
+.porq h2{
+    color: #A52998;
+    font-size: 4em;    
+    font-weight: bold;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+}
+
+.porq{
+/*    background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424), rgba(209,52,164,0.8);
+    background-color: #131313;
+    background-size: 20px 20px;*/
+}
+
+.preg{
+    padding-top: 10px;
+}
+.media-object{
+    width: 150px;
+}
+
+.contenedor_reha{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contenedor_reha hr{
+    border-color: #A52998;
+}
+
+.contenedor_reha h2{
+    color: #A52998;
+}
+
+
+
+

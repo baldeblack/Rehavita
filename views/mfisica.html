@@ -5,15 +5,19 @@
     	</div>
     </div>
 </section>
+<section class="frase-mfisica">
+    <div class="container">
+        <h1 class="text-center"><em>Pequeña definicion de la medicina fisica</em></h1>
+    </div>
+</section>
 <div class="container contenedor_equipamiento" ng-controller="mainCtrl">
-    <h2>Equipamiento</h2>
-    <hr>
     <div class="col-md-4 equipos" ng-repeat="equipo in equipos">
         <div class="thumbnail">
+          <h2 class="text-center">{{equipo.titulo}}</h2>
+          <hr>
            <div class="contendor-img-thumbnail border">
                <img ng-src="{{equipo.img}}" alt="">
            </div> 
-           <h4 class="text-center">{{equipo.titulo}}</h4>
            <p>{{equipo.descripcion}}</p>
         </div>
     </div>

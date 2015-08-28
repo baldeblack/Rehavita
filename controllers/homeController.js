@@ -23,23 +23,23 @@ app.controller("mainCtrl", function ($scope, uiGmapGoogleMapApi) {
         { img: 'img/convenios/blue.png',
           titulo: 'Blue Cross & Blue Shield',
           descripcion: '',
-          link: ''},
+          link: 'http://www.bcbsu.com.uy/bcbsu/espaniol/index.asp'},
         { img: 'img/convenios/summum.jpg',
           titulo: 'Summum',
           descripcion: '',
-          link: ''},
+          link: 'https://www.summum.com.uy/'},
         { img: 'img/convenios/defensor.png',
           titulo: 'Defensor Sporting',
           descripcion: '',
-          link: ''},
+          link: 'http://defensorsporting.com.uy/dsc/'},
         { img: 'img/convenios/cosem2.png',
           titulo: 'Cosem',
           descripcion: '',
-          link: ''},
+          link: 'https://www.cosem.com.uy/'},
         { img: 'img/convenios/pulso2.jpg',
           titulo: 'Pulso Acompañantes',
           descripcion: '',
-          link: ''},
+          link: 'http://www.pulso.com.uy/'},
        ];
     
     $scope.convenios = [
@@ -75,7 +75,7 @@ app.controller("mainCtrl", function ($scope, uiGmapGoogleMapApi) {
             anim_delay: '0.5s',
             imagen: 'img/home/preguntas.png',
             titulo: 'Preguntas Frecuentes',
-            descripcion: 'Preguntas que usualmente los clientes nos preguntan con frecuencia.',
+            descripcion: 'Preguntas que usualmente los clientes nos hacen con frecuencia.',
             link: '#/preguntas',
             btn: 'Ver preguntas'
         }
@@ -296,7 +296,23 @@ app.controller("mainCtrl", function ($scope, uiGmapGoogleMapApi) {
         }
     ];
     
-    
+    $scope.preguntas = [
+        {
+            img: 'img/home/preguntas.png',
+            titulo: 'Pregunta 1',
+            respuesta: 'Respuesta 1'
+        },
+        {
+            img: 'img/home/preguntas.png',
+            titulo: 'Pregunta 2',
+            respuesta: 'Respuesta 2'
+        },
+        {
+            img: 'img/home/preguntas.png',
+            titulo: 'Pregunta 3',
+            respuesta: 'Respuesta 3'
+        }
+    ];
     
 });
 
