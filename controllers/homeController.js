@@ -16,14 +16,10 @@ app.controller("mainCtrl", function ($scope, uiGmapGoogleMapApi) {
     };
     
     $scope.servicios = [
-        { img: 'img/convenios/atenas2.png',
+ /*       { img: 'img/convenios/atenas2.png',
           titulo: 'Atenas',
           descripcion: '',
-          link: ''},
-        { img: 'img/convenios/blue.png',
-          titulo: 'Blue Cross & Blue Shield',
-          descripcion: '',
-          link: 'http://www.bcbsu.com.uy/bcbsu/espaniol/index.asp'},
+          link: ''},*/
         { img: 'img/convenios/summum.jpg',
           titulo: 'Summum',
           descripcion: '',
@@ -40,6 +36,10 @@ app.controller("mainCtrl", function ($scope, uiGmapGoogleMapApi) {
           titulo: 'Pulso Acompañantes',
           descripcion: '',
           link: 'http://www.pulso.com.uy/'},
+        { img: 'img/convenios/blue.png',
+          titulo: 'Blue Cross & Blue Shield',
+          descripcion: '',
+          link: 'http://www.bcbsu.com.uy/bcbsu/espaniol/index.asp'}
        ];
     
     $scope.convenios = [
