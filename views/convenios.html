@@ -13,7 +13,7 @@
         <div class="row">
           <div class="col-md-12">
           <div class="col-sm-6 col-md-4" ng-repeat="servicio in servicios">
-            <div class="thumbnail conv vista">
+            <div class="thumbnail conv vista wow zoomIn" data-wow-duration="0.7s" data-wow-delay="{{servicio.segundo}}">
               <img ng-src="{{servicio.img}}" alt="...">
               <div class="mascara">  
                   <h2>{{servicio.titulo}}</h2>  

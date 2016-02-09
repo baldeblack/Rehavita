@@ -9,78 +9,117 @@
 <section class="contenido_somos" data-speed="12" data-type="background">
   <div class="container info-somos">
       <div class="contenedor-tabs" ng-controller="mainCtrl">
-       <div class="col-xs-3"> <!-- required for floating -->
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs tabs-left">
-              <li class="active"><a showtab="" href="#home" data-toggle="tab">Quienes somos</a></li>
-              <li><a showtab="" href="#profile" data-toggle="tab">Nuestro Equipo</a></li>
-              <li><a showtab="" href="#inst" data-toggle="tab">Instalaciones</a></li>
-            </ul>
-        </div>
+            
+          <div class="board">
+                    
+              <div class="board-inner">
+                  <ul class="nav nav-tabs" id="myTab">
+                    <div class="liner"></div>
+                    <li class="active wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.3s">
+                      <a href="#home" showtab="" data-toggle="tab" title="QUIENES SOMOS">
+                        <span class="round-tabs one">
+                          <i class="glyphicon glyphicon-home"></i>
+                        </span> 
+                      </a>
+                    </li>
 
-        <div class="col-xs-9">
-            <!-- Tab panes -->
-            <div class="tab-content">
-                  <div class="tab-pane active" id="home">
-                    <h2>QUIENES SOMOS</h2>
-                    <hr>
-                    <p>Reha-vita es un emprendimiento pensado en llenar espacios que aún no se han cubierto en el área de la Rehabilitación y la calidad de vida, brindando atención grupal o individual según las necesidades de cada paciente, adecuando horarios y tratamiento sin esperas e inconvenientes.</p>
-                    <p>El concepto de lograr una adecuada calidad de vida una vez terminado el proceso de Rehabilitación formal, es algo que hoy en día es preocupación de muchas personas que no encuentran un ámbito adecuado a sus necesidades para continuar su actividad física una vez dadas de alta de los servicios de Rehabilitación.</p>
-                    <p>Contamos con una planta de 200 m² con consultorios y gimnasios equipados adecuadamente para brindar cualquier servicio de Medicina Física y Rehabilitación.</p>
-                
+                    <li class="wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.4s">
+                      <a href="#profile" showtab="" data-toggle="tab" title="NUESTRO EQUIPO">
+                       <span class="round-tabs two">
+                          <i class="glyphicon glyphicon-user"></i>
+                       </span> 
+                      </a>
+                    </li>
+                    <li class="wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                      <a href="#messages" showtab="" data-toggle="tab" title="INSTALACIONES">
+                         <span class="round-tabs three">
+                            <i class="fa fa-building"></i>
+                         </span> 
+                      </a>
+                    </li>                 
+                  </ul>
+              </div>
+
+              <div class="tab-content wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                  <div class="tab-pane fade in active" id="home">
+                    <h3 class="head text-center">QUIENES SOMOS</h3>
+                    <div class="spacer"></div>
+                    <div class="contenido-item-somos">
+                      <p class="narrow text-center">Reha-vita es un emprendimiento pensado en llenar espacios que aún no se han cubierto en el área de la Rehabilitación y la calidad de vida, brindando atención grupal o individual según las necesidades de cada paciente, adecuando horarios y tratamiento sin esperas e inconvenientes.</p>
+                      <p class="narrow text-center">El concepto de lograr una adecuada calidad de vida una vez terminado el proceso de Rehabilitación formal, es algo que hoy en día es preocupación de muchas personas que no encuentran un ámbito adecuado a sus necesidades para continuar su actividad física una vez dadas de alta de los servicios de Rehabilitación.</p>
+                      <p class="narrow text-center">Contamos con consultorios y gimnasios equipados adecuadamente para brindar cualquier servicio de Medicina Física y Rehabilitación.</p>
+                    </div>
+                    <br>
+                    <br>
                   </div>
-                  <div class="tab-pane" id="profile">
-                      <h2>NUESTRO EQUIPO</h2>
-                      <hr>
-                      <div ng-repeat="persona in personasEquipo" class="{{persona.class}}">
-                         <div class="thumbnail">
-                          {{persona.img}}
-                          <h3>{{persona.nombre}}</h3>
-                          <h4><small>{{persona.profesion}}</small></h4>
-                          <h4>{{persona.area}}</h4>
-                         </div>
-                      </div>
-                      <div class="col-md-offset-1 col-md-10 slider-equipo">
-                        <div id="slides_control">
-                            <div>
-                              <carousel interval="myInterval">
-                                <slide ng-repeat="slide in slides" active="slide.active">
-                                  <img ng-src="{{slide.image}}" style="width:100%;height:100%;">
-                                  <div class="carousel-caption">
-                                    <!--<h4>Slide {{$index+1}}</h4>-->
-                                  </div>
-                                </slide>
-                              </carousel>
-                            </div>
+                  <div class="tab-pane fade" id="profile">
+                      <h3 class="head text-center">NUESTRO EQUIPO</h3>
+                      <div class="spacer"></div>
+                      <div class="contenido-item-somos">
+                        <div ng-repeat="persona in personasEquipo" class="{{persona.class}}">
+                           <div class="thumbnail item-equipo-prof">
+                            <img ng-src="{{persona.img}}" alt="">
+                            <h3>{{persona.nombre}}</h3>
+                            <h4><small>{{persona.profesion}}</small></h4>
+                            <h4>{{persona.area}}</h4>
+                           </div>
                         </div>
-                      </div>  
-                  </div>
-                  <div class="tab-pane" id="inst">
-                      <h2>INSTALACIONES</h2>
-                      <hr>
-                      <div class="thumbnail" ng-repeat="inst in insImagenes" >
-                          <img ng-src="{{inst.img}}" alt="">
                       </div>
                   </div>
-            </div>
-        </div> 
+                  <div class="tab-pane fade" id="messages">
+                      <h3 class="head text-center">INSTALACIONES</h3>
+                      <div class="spacer"></div>
+                      <div class="row contenido-item-somos">
+                        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 cont-item" ng-repeat="inst in insImagenes">
+                          <a class="thumbnail group_elements" rel="group1" href="{{inst.img}}">
+                            <img class="" ng-src="{{inst.imgp}}"/>
+                          </a>
+                        </div>
+                        
+                        <!--<flex-slider flex-slide="s in slides2" control-nav="thumbnails">
+                            <li data-thumb="{{s}}">
+                                <img ng-src="{{s}}">
+                            </li>
+                        </flex-slider>-->
+                    
+                      </div>
+                  </div>
+                  <div class="clearfix"></div>
+              </div>
+
+          </div>
+
       </div>
-       
-       <!-- <ul class="nav nav-tabs">
-            <li class="active"><a showtab="" href="#standardNav">Standard</a></li>
-            <li><a showtab="" href="#quickadd">Quick Add</a></li>
-            <li><a showtab="" href="#juja">Juja</a></li>
-        </ul>
-        <div class="tab-content">
-            <div class="calendarNav tab-pane fade in active" id="standardNav">
-                Pane 1
-            </div>
-            <div id="quickadd" class="tab-pane fade">
-                Pane 2
-            </div>
-            <div id="juja" class="tab-pane fade">
-                Pane 3
-            </div>
-        </div>-->
+
   </div>
+  <div ng-controller="mainCtrl">
+    <div owl-carousel="items" id="owl-demo">
+        <div class="item g1 popup-with-zoom-anim">
+            <img class="lazyOwl" ng-src="{{item}}" alt="name">
+        </div>
+    </div>
+  </div>
+
+ <!--  <div id="owl-demo" class="owl-carousel text-center">
+    <div class="item g1 popup-with-zoom-anim" href="#small-dialog">
+      <img class="lazyOwl" data-src="img/equipo/1.jpg" alt="name">
+    </div>
+    <div class="item g1 popup-with-zoom-anim" href="#small-dialog1">
+      <img class="lazyOwl" data-src="img/equipo/2.jpg" alt="name">
+    </div>
+    <div class="item g1 popup-with-zoom-anim" href="#small-dialog1">
+      <img class="lazyOwl" data-src="img/equipo/32.jpg" alt="name">
+    </div>
+  </div>
+ -->
+
 </section>
+
+<script type="text/javascript">
+
+  $(function(){
+    $("a[title]").tooltip();
+  });
+
+
+</script>

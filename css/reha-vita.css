@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+
 .borde{
     border: 1px solid red;
 }
@@ -14,13 +15,57 @@ body{
 }
 .contenedor-header{
    /* background-color: #272822 !important;*/
-    background-color:#272822;
+    background-color:#611E6E;
      /*background: url(../img/34.jpg) no-repeat fixed center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;*/
 
+}
+.spacer {
+    width: 100px;
+    height: 2px;
+    margin: auto;
+    background: #A52998;
+}
+.contenido-item-somos{
+    padding-top: 50px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.cont-item{
+    padding: 0px !important;
+    margin:0px !important;
+}
+.contenido-item-somos .group_elements{
+    width: 100% !important;
+    height: 100% !important;
+
+    overflow: hidden;
+}
+
+.contenido-item-somos .group_elements img{
+    
+    width: 300px !important;
+    height: 200px !important;
+    opacity: 0.8 !important;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+.contenido-item-somos .thumbnail{
+    padding: 0px !important;
+    margin-bottom: 0px !important;
+    background-color: none !important; 
+    border: none !important;
+}
+.contenido-item-somos .group_elements img:hover{
+  
+  opacity: 1 !important;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s !important;
+  transition: opacity 0.35s, transform 0.35s !important;
+  transform: scale(1.5) !important;
 }
 
 .navbar .navbar-default{
@@ -58,13 +103,14 @@ body{
     width: 300px;
 }
 .contenedor-menu{
-    background-color: #272822;
+    background-color: #46154F;
     border-bottom: 8px solid #A52998;
 }
 
 .social ul{
     padding: 0px;
 }
+
 
 .btn-social {
     display: inline-block;
@@ -209,6 +255,7 @@ body{
     margin-top: 20px;
 }
 
+
 /********************************/
 /*       Fade Bs-carousel       */
 /********************************/
@@ -313,29 +360,19 @@ body{
   background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-  background-image: url(../img/4.png); 
+  background-image: url(../img/slide-home-rehavita1.jpg); 
 }
 .fade-carousel .slides .slide-2 {
-  background-image: url(../img/5.jpg);
+  background-image: url(../img/slide-home-rehavita2.jpg);
 }
 .fade-carousel .slides .slide-3 {
-  background-image: url(../img/calidad.jpg);
-}
-
-/********************************/
-/*          Media Queries       */
-/********************************/
-@media screen and (min-width: 980px){
-    .hero { width: 980px; }    
-}
-@media screen and (max-width: 640px){
-    .hero h1 { font-size: 4em; }    
+  background-image: url(../img/slide-home-rehavita3.jpg);
 }
 
 .frase-home{
     background: linear-gradient(to right, rgba(209, 52, 164, 0.9),  rgba(209, 52, 164, 0.9)), url(../img/cubos.jpg);
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -343,7 +380,68 @@ body{
     font-family: 'Dancing Script', cursive;
     text-shadow: 1px 1px 0 rgba(0,0,0,.75);
     color: white;
+    font-size: 50px;
 }
+
+.frase-home ul{
+    padding: 0px;
+}
+.frase-home ul{
+    position: relative;
+    display: inline-block;
+    padding: 0px;
+    right:0px;
+
+}
+.frase-home h2{
+    color: white;
+    font-size: 4em;    
+   /* font-weight: 200;*/
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+}
+.frase-home h2 span{
+    margin-left: 20px;
+}
+
+.frase-home .btn-social {
+    vertical-align: middle;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #272822;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 25px;
+    line-height: 55px;
+}
+.frase-home .btn-social i{
+    margin-top: 8px;
+    text-align: center;
+    vertical-align: middle;
+}
+.frase-home .btn:focus,
+.frase-home .btn:active,
+.frase-home .btn.active {
+    outline: 0;
+}
+
+.frase-home .btn-outline {
+    margin-top: 0 !important;
+    border: solid 4px white;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+.frase-home .btn-outline:hover,
+.frase-home .btn-outline:focus,
+.frase-home .btn-outline:active,
+.frase-home .btn-outline.active {
+    border: solid 4px white !important;
+    color: white;
+    /*color: #18bc9c;*/
+    background: inherit !important;
+}
+
 .frase-reha{
     background: linear-gradient(to right, rgba(209, 52, 164, 0.9),  rgba(209, 52, 164, 0.9)), url(../img/cubos.jpg);
     /*background-color: #272822;*/
@@ -369,7 +467,7 @@ body{
     height: 250px;
 }
 
-.titulo_contacto h1,.titulo_convenio h1, .titulo_equipo h1, .titulo_somos h1,.titulo_preguntas h1,.titulo_calidad h1,.titulo_reha h1{
+.titulo_contacto h1,.titulo_convenio h1,.titulo_galeria h1, .titulo_equipo h1, .titulo_somos h1,.titulo_preguntas h1,.titulo_calidad h1,.titulo_reha h1{
     color: white;
 }
 
@@ -416,7 +514,7 @@ body{
 }
 
 .titulo_equipo{
-    background: url(../img/eq2.jpg) no-repeat 50% 0 fixed;
+    background: url(../img/mfisica.jpg) no-repeat 50% 0 fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -427,7 +525,7 @@ body{
 }
 
 .titulo_somos{
-    background: url(../img/eq2.jpg) no-repeat 50% 0 fixed;
+    background: url(../img/nosotros.jpg) no-repeat 50% 0 fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -461,18 +559,13 @@ body{
     margin: 0;
     padding: 0;
     background-color: rgba(209,52,164,0.8);
+   /* background-color: rgba(70,21,79,0.8);*/
 }
 
 
 /********************************/
 /*          Media Queries       */
 /********************************/
-@media screen and (min-width: 980px){
-    /*.titulo { width: 980px; }   */
-}
-@media screen and (max-width: 640px){
-    .titulo h1 { font-size: 4em; }    
-}
 
 .info-contacto{
 
@@ -487,6 +580,12 @@ body{
     box-shadow: none !important;
 }
 
+.form-contacto{
+    padding-top: 10px;
+}
+.contacto-items{
+    padding-top: 10px;
+}
 /*
 .form-control:focus {
   border-color: #FC03E3 !important;
@@ -534,12 +633,25 @@ footer{
     color: white;
 }
 
+.vinculos_footer a i{
+    padding-right: 10px;
+    color: #272822;
+    font-size: 12px;
+}
+.vinculos_footer a:hover i{
+    color: white;
+    font-size: 12px;
+}
+
 .social_titulo_footer h3{
     padding: 0px;
 }
 
 .info_footer{
     padding-bottom: 20px;
+}
+.info_footer i{
+    padding-right: 10px;
 }
 .social_footer ul{
     position: relative;
@@ -577,7 +689,7 @@ footer{
     background: #A52998;
 }
 .copyright{
-    background-color: black; 
+    background-color: #46154F; 
     color:white;
 }
 
@@ -768,7 +880,23 @@ footer{
 .contenedor_galeria{
     padding-top: 20px;
 }
+
+.titulo_galeria{
+    /*background: url(../img/mfisica.jpg) no-repeat 50% 0 fixed;*/
+    background: linear-gradient(to right, rgba(209, 52, 164, 0.9),  rgba(209, 52, 164, 0.9)), url(../img/cubos.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+
+    height: 250px;
+}
+
 .contenedor_preguntas{padding-top: 20px; padding-bottom: 20px;}
+
+
+
 .grouped_elements{
     width: 280px;
     height: 220px;
@@ -782,41 +910,48 @@ footer{
 
 
 /* -------------- SOMOS ------------- */
+.contenido_somos{
+    background: linear-gradient(to right, rgba(209, 52, 164, 0.9),  rgba(209, 52, 164, 0.9)), url(../img/cubos.jpg);
 
-
+}
+.nav-tabs{
+    margin: 0 !important;
+    padding: 0 !important;
+}
 .contenedor-tabs{
     font-size: 16px;
-    margin-top: 50px;
     margin-bottom: 30px !important;
 }
-
+/*
 .contenedor-tabs hr{
     border-color: #A52998;
 }
 
 .contenedor-tabs h2{
-    color: #A52998;
-}
+
+   color: #333333;
+}*/
 
 .info-somos{
-    margin-bottom: 50px;
+   
 }
-
-.contenedor-tabs .nav-tabs li a{
+.tab-content{
+    background: white;
+}
+/*.contenedor-tabs .nav-tabs li a{
     border-radius: 0px !important;
     color: #333333;
 }
 
 .contenedor-tabs .nav-tabs li a:hover{
     color: #333333;
-    border-bottom-color: #333333;
     background: transparent;
 }
 
 .contenedor-tabs .nav-tabs li.active a{
     font-size: 16px !important;
     border-left-color: rgba(209,52,164,0.8) !important;
-    border-bottom-color: rgba(209,52,164,0.8) !important;
+    border-right-color: rgba(209,52,164,0.8) !important;
     border-top-color: rgba(209,52,164,0.8) !important;
     color: #A52998 !important;
 
@@ -824,14 +959,19 @@ footer{
 
 .contenedor-tabs .nav-tabs li.active a:hover{
     border-left-color: rgba(209,52,164,0.8);
-    border-bottom-color: rgba(209,52,164,0.8);
+    border-right-color: rgba(209,52,164,0.8);
     border-top-color: rgba(209,52,164,0.8);
     color: #A52998;
 
-}
+}*/
 
 .equipo-stilo{
-      
+  margin:15px !important;    
+}
+
+.equipo-stilo .item-equipo-prof{
+    border: 1px solid #A52998 !important;
+    padding: 20px !important;
 }
 
 .slider-equipo{
@@ -875,6 +1015,18 @@ footer{
 }
 
 
+
+.group_elements{
+    width: 350px !important;
+    height: 240px !important;
+    overflow: hidden;
+}
+
+.group_elements img{
+    width: 350px !important;
+    height: 240px !important;
+}
+
 /* ----- MEDICINA FISICA ----- */
 
 .frase-mfisica{
@@ -885,7 +1037,8 @@ footer{
     padding-left: 20px;
     padding-right: 20px;
 }
-.frase-mfisica h1{
+.frase-mfisica h2{
+
     font-family: 'Dancing Script', cursive;
     color: white;
     text-shadow: 1px 1px 0 rgba(0,0,0,.75);
@@ -933,13 +1086,217 @@ footer{
     background-color: #131313;
     background-size: 20px 20px;*/
 }
+.porq-desc{
+    padding-bottom: 20px;
+}
+.contenedor-desc-porq{
+    padding-bottom: 20px;
+}
+
+.contenedor-desc-porq h3{
+    text-align: center;
+/*    font-family: 'Dancing Script', cursive;*/
+    font-size: 25px;
+    font-weight: 300;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 2;
+}
 
 .preg{
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 .media-object{
     width: 150px;
 }
+
+
+
+/*---------- TABS SOMOS -------------*/
+.board{
+    width: 100%;
+    background: transparent;
+}
+.board-inner .nav-tabs {
+
+    margin: 40px auto;
+    margin-bottom: 0;
+
+    text-align:center;
+}
+
+.board > div.board-inner{
+    background: transparent;
+    background-size: 30%;
+}
+
+p.narrow{
+    width: 60%;
+    margin: 10px auto;
+}
+
+.liner{
+    height: 2px;
+    position: absolute;
+    width: 80%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    z-index: 1;
+}
+
+.board-inner .nav-tabs > li.active > a, .board-inner .nav-tabs > li.active > a:hover, .board-inner .nav-tabs > li.active > a:focus {
+    color: #555555;
+    cursor: default;
+    background-color: transparent;
+    border: 0;
+    border-bottom-color: transparent;
+}
+
+span.round-tabs{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    border-radius: 100px;
+    /*background: white;*/
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+/*span.round-tabs.one{
+    color: rgb(34, 194, 34);
+    border: 2px solid rgb(34, 194, 34);
+}*/
+
+span.round-tabs.one{
+    color: white;
+    border: 2px solid white;
+}
+
+.board-inner .nav-tabs li.active span.round-tabs.one{
+    background: #fff !important;
+    border: 2px solid #A52998;
+    color: #A52998;
+}
+
+/*span.round-tabs.two{
+    color: #febe29;
+    border: 2px solid #febe29;
+}*/
+span.round-tabs.two{
+    color: white;
+    border: 2px solid white;
+}
+
+.board-inner .nav-tabs li.active span.round-tabs.two{
+    background: #fff !important;
+    border: 2px solid #A52998;
+    color: #A52998;
+}
+
+/*span.round-tabs.three{
+    color: #3e5e9a;border: 2px solid #3e5e9a;
+}*/
+span.round-tabs.three{
+    color: white;
+    border: 2px solid white;
+}
+
+.board-inner .nav-tabs li.active span.round-tabs.three{
+    background: #fff !important;
+    border: 2px solid #A52998;
+    color: #A52998;
+}
+
+.board-inner .nav-tabs > li.active > a span.round-tabs{
+    background: transparent;
+}
+.board-inner .nav-tabs > li {
+    width: 20%;
+    float:none;
+    display:inline-block;
+}
+.board-inner .nav-tabs > li:focus,.board-inner .nav-tabs > li:active,.board-inner .nav-tabs > li >a:hover {
+    outline: none;
+    border: none;
+}
+.board-inner .nav-tabs li:after {
+    content: " ";
+    position: absolute;
+    left: 45%;
+    opacity:0;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 5px solid transparent;
+    border-bottom-color: white;
+    transition:0.1s ease-in-out;
+    
+}
+.board-inner .nav-tabs li.active:after {
+    content: " ";
+    position: absolute;
+    left: 45%;
+    opacity:1;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 10px solid transparent;
+    border-bottom-color: white;
+    
+}
+.board-inner .nav-tabs > li a{
+   width: 70px;
+   height: 70px;
+   margin: 20px auto;
+   border-radius: 100%;
+   padding: 0;
+}
+
+.board-inner .nav-tabs > li a:hover{
+    background: transparent;
+    outline: none;
+}
+
+.board .tab-content{
+    position: relative;
+    display: block;
+}
+.board .tab-pane{
+
+    padding-top: 50px;
+}
+.board .tab-content .head{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.btn-outline-rounded{
+    padding: 10px 40px;
+    margin: 20px 0;
+    border: 2px solid transparent;
+    border-radius: 25px;
+}
+
+.btn.green{
+    background-color:#A52998;
+    color: #A52998;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid transparent !important;
+}
+
+.flexslider-container {
+	width: 50% !important;
+	margin: 10px auto;
+}
+
+/* -- REAHABILITACION - CALIDAD -- */
 
 .contenedor_reha{
     padding-top: 20px;
@@ -947,13 +1304,130 @@ footer{
 }
 
 .contenedor_reha hr{
-    border-color: #A52998;
+    border-color: rgba(209,52,164,0.8);
+    padding-bottom: 0px;
 }
 
 .contenedor_reha h2{
     color: #A52998;
 }
 
+.contenedor-trat{
+    padding-left: 0px;
+    padding-right: 0px;
+
+    border: 1px solid rgba(209,52,164,0.8);
+    /*box-shadow: 0px 0px 15px rgba(0,0,0,.75);*/
+}
+
+.titulo-trat-reha{
+    padding-top: 10px;
+
+    /*background: rgba(209,52,164,0.8);*/
+}
+
+.titulo-trat-reha h2{
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+    color: rgba(209,52,164,0.8);
+}
+
+.contenedor-trat ul {
+        background: rgba(209,52,164,0.8);
+        list-style: none;
+        margin: 0px;
+        
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+        .contenedor-trat ul li {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            cursor: pointer;
+            color: white;
+        }
+
+            .contenedor-trat ul li i {        
+                margin-right: 40px;
+            }
+            .contenedor-trat ul li span{
+                
+            }
+            
+.error {
+  border-color: red;
+}
+ 
+.warning {
+  border-color: yellow;
+}
+
+.g1{
+    position:relative;
+}
+.g1:hover div.caption{
+    display:block;
+    transform:;
+}
+
+img.lazyOwl {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------*/
+/* ---------------------------*/
+/* ------- RESPONSIVE --------*/
+/* ---------------------------*/
+/* ---------------------------*/
+
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }
+    /*.titulo { width: 980px; }   */
+}  
+}
+@media screen and (max-width: 640px){
+    .hero h1 { font-size: 4em; }    
+    .titulo h1 { font-size: 4em; } 
+}
+
+@media( max-width : 585px ){
+    
+.board {
+    width: 90%;
+    height:auto !important;
+}
+span.round-tabs {
+    font-size:16px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+}
+.board .tab-content .head{
+    font-size:20px;
+}
+.board .nav-tabs > li a {
+    width: 50px;
+    height: 50px;
+    line-height:50px;
+}
+
+.board li.active:after {
+    content: " ";
+    position: absolute;
+    left: 35%;
+}
 
 
 

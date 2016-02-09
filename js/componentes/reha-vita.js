@@ -31,6 +31,14 @@ $(document).ready(function() {
       'speedOut'    : 200, 
       'overlayShow' : false
     });
+    
+    $("a.group_elements").fancybox({
+      'transitionIn'  : 'elastic',
+      'transitionOut' : 'elastic',
+      'speedIn'   : 600, 
+      'speedOut'    : 200, 
+      'overlayShow' : false
+    });
     //$("a.grouped_elements").fancybox();
 
     $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
@@ -68,6 +76,11 @@ $(document).ready(function() {
             $scroll.css({ backgroundPosition: coords });
         });
     });
+
+    $(function(){
+      $('a[title]').tooltip();
+    });
+
 
 /*    $('.dropdown-toggle').dropdownHover(options);*/
     //-------/* END | PARALLAX *//---------//
@@ -120,9 +133,10 @@ $(document).ready(function() {
        map.setCenter(center); 
     }*/
 
-    
+
 
 });
+
 
 
 

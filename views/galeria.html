@@ -1,4 +1,4 @@
-<section class="titulo_equipo" data-speed="2" data-type="background">
+<section class="titulo_galeria" data-speed="2" data-type="background">
     <div class="container contenedor-titulo">
     	<div class="titulo">
     		<h1>GALERIA</h1>
@@ -8,7 +8,7 @@
 <div class="container contenedor_galeria" ng-controller="mainCtrl">
 	<div class='col-sm-4 col-xs-6 col-md-3 col-lg-3' ng-repeat="imagen in imgenesGaleria">
 		<a class="thumbnail grouped_elements" rel="group1" href="{{imagen.ruta}}">
-			<img class="{{imagen.class}}" ng-src="{{imagen.ruta}}" alt="{{imagen.titulo}}"/>
+			<img class="{{imagen.class}}" ng-src="{{imagen.rutap}}" alt="{{imagen.titulo}}"/>
 		</a>
 	</div>
 </div>

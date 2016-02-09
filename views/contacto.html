@@ -22,33 +22,46 @@
   <div class="container info-contacto">
       <br>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6" ng-controller="mainCtrl">
 
-            <form class="form-horizontal form-contacto" action="" method="post">
+            <form class="form-horizontal form-contacto" ng-submit="submitForm(formContacto)" name="formContacto" method="post" action="">
               <p>A través de nuestro correo o con sólo marcar el teléfono <b>24039392</b> estaremos encantados de darles a conocer todos nuestros tratamientos y servicios complementarios.</p>
               <p>Requeridos *</p>
+
+              {{formData}}
+              <p ng-class="result" style="padding: 15px; margin: 0;">{{ resultMessage }}</p>
               <!-- Name input-->
               <div class="form-group">
                 <label class="control-label" for="name">Nombre*</label>               
-                <input id="name" name="name" type="text" placeholder="Nombre..." class="form-control">
+                <input id="nombre" name="nombre" type="text" placeholder="Nombre..." class="form-control" ng-model="formData.nombre" required>
+                <span ng-show="formContacto.nombre.$error.required">Nombre es requerido.</span>
               </div>
       
               <!-- Email input-->
               <div class="form-group">
                 <label class="control-label" for="email">E-mail*</label>
-                <input id="email" name="email" type="text" placeholder="E-mail..." class="form-control">
+                <input id="email" name="email" type="email" placeholder="example@email.com" class="form-control" ng-model="formData.email" required ng-class="{ 'error': !formContacto.email.$error.required && submitted, 'warning': !formContacto.email.$error.email }">
+                <span ng-show="formContacto.email.$error.required">Email es requerido.</span>
               </div>
-      
+
+              <!-- Name input-->
+              <div class="form-group">
+                <label class="control-label" for="subject">Asunto*</label>               
+                <input id="subject" name="subject" type="text" placeholder="Asunto..." class="form-control" ng-model="formData.subject" required>
+                <span ng-show="formContacto.subject.$error.required">Asunto es requerido.</span>
+              </div>
+
               <!-- Message body -->
               <div class="form-group">
-                <label class="control-label" for="message">Mensaje</label>
-                <textarea class="form-control" id="message" name="message" placeholder="Mensaje..." rows="5"></textarea>
+                <label class="control-label" for="message">Mensaje*</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje..." rows="5" ng-model="formData.mensaje" required></textarea>
+                <span ng-show="formContacto.mensaje.$error.required">Mensaje es requerido.</span>
               </div>
       
               <!-- Form actions -->
               <div class="form-group">
                 <div class="text-left">
-                  <button type="submit" class="btn btn-primary btn-lg btn-enviar">Enviar</button>
+                  <button type="submit" class="btn btn-primary btn-lg btn-enviar" ng-disabled="!formContacto.$valid">Enviar</button> 
                 </div>
               </div>
 

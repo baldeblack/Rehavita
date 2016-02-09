@@ -37,7 +37,7 @@ var configApp = function($routeProvider){
 }
 
 //creamos el modulo y le aplicamos la configuración
-var app = angular.module("rehavita", ['ngRoute','uiGmapgoogle-maps','ui.bootstrap']).config(configApp);
+var app = angular.module("rehavita", ['ngRoute','uiGmapgoogle-maps','ui.bootstrap','angular-owl-carousel','angular-flexslider']).config(configApp);
 
 app.filter('reverse', function() {
   return function(items) {
