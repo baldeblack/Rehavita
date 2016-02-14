@@ -16,10 +16,6 @@ app.controller("mainCtrl", function ($scope,$http, uiGmapGoogleMapApi) {
     };
     
     $scope.servicios = [
- /*       { img: 'img/convenios/atenas2.png',
-          titulo: 'Atenas',
-          descripcion: '',
-          link: ''},*/
         { img: 'img/convenios/summum.jpg',
           titulo: 'Summum',
           descripcion: '',
@@ -59,10 +55,9 @@ app.controller("mainCtrl", function ($scope,$http, uiGmapGoogleMapApi) {
     
     $scope.equipo = {};
     
-    
     $scope.homearticulos = [
         {
-            class: 'col-sm-6 col-md-4 wow zoomIn',
+            class: 'col-xs-12 col-sm-4 col-md-4 wow zoomIn',
             anim_duration: '0.5s',
             anim_delay: '0s',
             imagen: 'img/home/home-rehavita-articulo.jpg',
@@ -72,7 +67,7 @@ app.controller("mainCtrl", function ($scope,$http, uiGmapGoogleMapApi) {
             btn: 'Ir a la galeria'
         },
         {
-            class: 'col-sm-6 col-md-4 wow zoomIn',
+            class: 'col-xs-12 col-sm-4 col-md-4 wow zoomIn',
             anim_duration: '0.5s',
             anim_delay: '0.3s',
             imagen: 'img/home/home-rehavita-preguntas.png',
@@ -324,7 +319,7 @@ app.controller("mainCtrl", function ($scope,$http, uiGmapGoogleMapApi) {
             titulo: '',
             class: 'img-responsive',
             ruta: 'img/galeria/galeria-rehavita-gr38.jpg',
-            rutap: 'img/galeria/galeria-rehavita-gr38.jpg'
+            rutap: 'img/tratamientos/trat-rehavita-pq23.jpg'
         },
         {
             titulo: '',
@@ -355,46 +350,58 @@ app.controller("mainCtrl", function ($scope,$http, uiGmapGoogleMapApi) {
     
     $scope.personasEquipo = [
         {
-            class: 'col-md-4 text-center equipo-stilo',
+            class: 'col-sm-6 col-md-4 text-center equipo-stilo',
             nombre: 'Dra. Gabriela De Pizzol',
             profesion: 'Fisiatra',
             area: '',
-            img: 'img/equipo/p6.jpg'
+            img: 'img/equipo/p6.jpg',
+            duracion: '0.5s',
+            delay:'0.1s'
         },
         {
-            class: 'col-md-4 text-center equipo-stilo',
+            class: 'col-sm-6 col-md-4 text-center equipo-stilo',
             nombre: 'Silvia Ardaiz',
             profesion: 'Lic. en Fisioterapia',
             area: '',
-            img: 'img/equipo/p1.jpg'
+            img: 'img/equipo/p1.jpg',
+            duracion: '0.5s',
+            delay:'0.2s'
         },
         {
-            class: 'col-md-4 text-center equipo-stilo',
+            class: 'col-sm-6 col-md-4 text-center equipo-stilo',
             nombre: 'Nathalie Jourdan',
             profesion: 'Lic. en Fisioterapia',
             area: '',
-            img:'img/equipo/p2.jpg'
+            img:'img/equipo/p2.jpg',
+            duracion: '0.5s',
+            delay:'0.3s'
         },
         {
-            class: 'col-md-4 text-center equipo-stilo',
+            class: 'col-sm-6 col-md-4 text-center equipo-stilo',
             nombre: 'Natalia Balsa',
             profesion: 'Lic. en Fisioterapia',
             area: '',
-            img: 'img/equipo/p4.jpg'
+            img: 'img/equipo/p4.jpg',
+            duracion: '0.5s',
+            delay:'0.4s'
         },
         {
-            class: 'col-md-4 text-center equipo-stilo',
+            class: 'col-sm-6 col-md-4 text-center equipo-stilo',
             nombre: 'Esteban Fontes',
             profesion: 'Lic. en Fisioterapia',
             area: '',
-            img: 'img/equipo/p5.jpg'
+            img: 'img/equipo/p5.jpg',
+            duracion: '0.5s',
+            delay:'0.5s'
         },
         {
-            class: 'col-md-4 text-center equipo-stilo',
+            class: 'col-sm-6 col-md-4 text-center equipo-stilo',
             nombre: 'Florencia Borges',
             profesion: 'Lic. en Fisioterapia',
             area: '',
-            img: 'img/equipo/p3.jpg'
+            img: 'img/equipo/p3.jpg',
+            duracion: '0.5s',
+            delay:'0.6s'
         }
         
     ];
@@ -497,37 +504,51 @@ app.controller("mainCtrl", function ($scope,$http, uiGmapGoogleMapApi) {
         {
             img: 'img/equipamiento/equipo-rehavita-neurodyn.jpg',
             titulo: 'Neurodyn',
-            descipcion: ''
+            descipcion: '',
+            duracion: '0.5s',
+            delay: ''
         },
         {
             img: 'img/equipamiento/equipo-rehavita-iontoforesis.jpg',
             titulo: 'Iontoforesis',
-            descipcion: ''
+            descipcion: '',
+            duracion: '0.5s',
+            delay: ''        
         },
         {
             img: 'img/equipamiento/equipo-rehavita-magneto.jpg',
             titulo: 'Magnetoterapia',
-            descipcion: ''
+            descipcion: '',
+            duracion: '0.5s',
+            delay: '0.1s'
         },
         {
             img: 'img/equipamiento/equipo-rehavita-ultramax.jpg',
             titulo: 'Ultramax',
-            descipcion: ''
+            descipcion: '',
+            duracion: '0.5s',
+            delay: '0.2s'
         },
         {
             img: 'img/equipamiento/equipo-rehavita-laser.jpg',
             titulo: 'Laser',
-            descipcion: ''
+            descipcion: '',
+            duracion: '0.5s',
+            delay: '0.3s'
         },
         {
             img: 'img/equipamiento/equipo-rehavita-infrarojo.jpg',
             titulo: 'Infrarrojo',
-            descipcion: ''
+            descipcion: '',
+            duracion: '0.5s',
+            delay: '0.4s'
         },
         {
             img: 'img/equipamiento/equipo-rehavita-ultrasono.jpg',
             titulo: 'Ultrasonido',
-            descipcion: ''
+            descipcion: '',
+            duracion: '0.5s',
+            delay: '0.5s'
         }
 
     ];
@@ -536,27 +557,37 @@ app.controller("mainCtrl", function ($scope,$http, uiGmapGoogleMapApi) {
         {
             img: 'img/home/home-rehavita-preguntasb.png',
             titulo: 'Puedo ir directamente a la clínica sin que me vea un médico?',
-            respuesta: 'Lo ideal es que concurra con indicaciones médicas, pero de no tenerlas contamos con médico Fisiatra en la clínica. La clínica trabaja con protocolos de tratamiento para las diferentes patologías supervisadas por médico.'
+            respuesta: 'Lo ideal es que concurra con indicaciones médicas, pero de no tenerlas contamos con médico Fisiatra en la clínica. La clínica trabaja con protocolos de tratamiento para las diferentes patologías supervisadas por médico.',
+            duracion: '0.5s',
+            delay: '0.1s'
         },
         {
             img: 'img/home/home-rehavita-preguntasb.png',
             titulo: 'Hacen domicilios?',
-            respuesta: 'Si, dependiendo de la zona.'
+            respuesta: 'Si, dependiendo de la zona.',
+            duracion: '0.5s',
+            delay: '0.2s'
         },
         {
             img: 'img/home/home-rehavita-preguntasb.png',
             titulo: 'Se hacen consultas médicas en domicilio?',
-            respuesta: 'Si, se hacen para dar indicaciones al licenciado que concurra al domicilio.'
+            respuesta: 'Si, se hacen para dar indicaciones al licenciado que concurra al domicilio.',
+            duracion: '0.5s',
+            delay: '0.3s'
         },
         {
             img: 'img/home/home-rehavita-preguntasb.png',
             titulo: 'En que horarios atienden en la clinica?',
-            respuesta: 'Trabajamos de lunes a viernes de 9:30-13:00 y de 14:00-19:00.'
+            respuesta: 'Trabajamos de lunes a viernes de 9:30-13:00 y de 14:00-19:00.',
+            duracion: '0.5s',
+            delay: '0.4s'
         },
         {
             img: 'img/home/home-rehavita-preguntasb.png',
             titulo: 'En donde se encuentran ubicados?',
-            respuesta: 'La dirección de la clinica es  Juan Antonio Rodriguez 1464-1468 apto 603, estamos en el barrio Cordón.'
+            respuesta: 'La dirección de la clinica es  Juan Antonio Rodriguez 1464-1468 apto 603, estamos en el barrio Cordón.',
+            duracion: '0.5s',
+            delay: '0.5s'
         }
     ];
     
@@ -578,18 +609,6 @@ app.controller("mainCtrl", function ($scope,$http, uiGmapGoogleMapApi) {
         'img/equipo/slide5.jpg',
         'img/equipo/slide6.jpg'
     ];
-
-/*    $scope.slides2 = [
-		'img/instalaciones/2.jpg',
-		'img/instalaciones/4.jpg',
-		'img/instalaciones/5.jpg',
-		'img/instalaciones/7.jpg',
-		'img/instalaciones/8.jpg',
-		'img/instalaciones/9.jpg'
-	];
-*/
-
-
 
     $scope.result = 'hidden';
     $scope.resultMessage;

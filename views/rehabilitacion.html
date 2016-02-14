@@ -10,28 +10,11 @@
         <h2 class="text-center">Rehabilitamos todo tipo de patologías en fase aguda hasta llegar al mejor resultado funcional posible, y en etapas de secuela para mantener logros obtenidos en aquellos pacientes que así lo requieran.</h2>
     </div>
 </section>
-<!--<div class="container contenedor_reha" ng-controller="mainCtrl">
-    <ul class="nav nav-tabs">
-      <li class="active"><a showtab="" href="#reuma" data-toggle="tab">Reumatologica</a></li>
-      <li><a showtab="" href="#trauma" data-toggle="tab">Traumatologica</a></li>
-    </ul>
-      <div class="tab-content">
-          <div class="tab-pane active" id="reuma">
-            <h2>REUMATOLOGICA</h2>
-            <hr>
-          </div>
-          <div class="tab-pane" id="trauma">
-              <h2>TRAUMATOLOGICA</h2>
-              <hr>
-          </div>
-    </div>
-</div>-->
-
 <section class="" data-speed="12" data-type="background">
   <div class="container info-somos">
       <div class="contenedor_reha" ng-controller="mainCtrl">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.1s">
             <div class="contenedor-trat">
               <div class="text-center titulo-trat-reha">
                   <h2>REUMATOLÓGICA</h2>             
@@ -45,7 +28,7 @@
               </ul>         
             </div> 
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.2s">
             <div class="contenedor-trat">
               <div class="text-center titulo-trat-reha">
                   <h2>TRAUMATOLÓGICA</h2>
@@ -62,7 +45,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.3s">
             <div class="contenedor-trat block-center">
               <div class="text-center titulo-trat-reha">
                   <h2>NEUROLOGICA</h2>
@@ -85,53 +68,16 @@
             </div>
           </div>
         </div>
-
-          <!--<div class="board2">
-                    
-              <div class="board-inner2">
-                  <ul class="nav nav-tabs" id="myTab">
-                    <div class="liner"></div>
-                    <li class="active wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.3s">
-                      <a href="#home" showtab="" data-toggle="tab" title="REUMATOLOGICA">
-                        <span class="cubic-tabs one">
-                          REUMATOLOGICA
-                        </span> 
-                      </a>
-                    </li>
-
-                    <li class="wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.4s">
-                      <a href="#profile" showtab="" data-toggle="tab" title="TRAUMATOLOGICA">
-                       <span class="cubic-tabs two">
-                          TRAUMATOLOGICA
-                       </span> 
-                      </a>
-                    </li>               
-                  </ul>
-              </div>
-
-              <div class="tab-content wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
-                  <div class="tab-pane fade in active" id="home">
-                    <h3 class="head text-center">REUMATOLOGICA</h3>
-                    <div class="spacer"></div>
-                   
-                  </div>
-                  <div class="tab-pane fade" id="profile">
-                      <h3 class="head text-center">TRAUMATOLOGICA</h3>
-                      <div class="spacer"></div>
-                      
-                  </div>
-                  <div class="clearfix"></div>
-              </div>
-
-          </div>-->
-
       </div>
-
   </div>
-
-
-
 </section>
+<div ng-controller="rehaCtrl">
+  <div owl-carousel="items" id="owl">
+      <div class="item g1 popup-with-zoom-anim">
+          <img class="lazyOwl" ng-src="{{item}}" alt="name">
+      </div>
+  </div>
+</div>
 
 <script type="text/javascript">
 

@@ -7,17 +7,17 @@
 </section>
 <div class="container contenedor_preguntas" ng-controller="mainCtrl">
    <div class="col-md-12 preg" ng-repeat="pregunta in preguntas">
-    <div class="media">
-      <div class="col-md-1">
+    <div class="media wow zoomIn" data-wow-duration="{{pregunta.duracion}}" data-wow-delay="{{pregunta.delay}}">
+      <div class="hidden-xs hidden-sm col-md-1">
       </div>
-      <div class="media-left col-md-2">
+      <div class="media-left hidden-xs col-sm-2 col-md-2">
           <img class="media-object img-responsive"  ng-src="{{pregunta.img}}" alt="...">
       </div>
-      <div class="media-body col-md-8">
+      <div class="media-body col-xs-12 col-sm-10 col-md-8">
         <h2 class="media-heading">{{pregunta.titulo}}</h2>
         <p>{{pregunta.respuesta}}</p>
       </div>
-      <div class="col-md-1">
+      <div class="hidden-xs hidden-sm col-md-1">
       </div>
     </div>
    </div>

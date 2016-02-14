@@ -24,9 +24,6 @@ var configApp = function($routeProvider){
     .when("/rehabilitacion",{
         templateUrl: "views/rehabilitacion.html"
     })
-    .when("/calidad",{
-        templateUrl: "views/calidad.html"
-    })
     .when("/noticias",{
         templateUrl: "views/noticias.html"
     })

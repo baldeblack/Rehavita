@@ -1,7 +1,5 @@
          <!-- SLIFER -->
         <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-          <!-- Overlay -->
-          <!--<div class="overlay"></div>-->
 
           <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -17,7 +15,6 @@
               <div class="hero">
                 <hgroup>
                     <h1>Rehabilitaci&oacute;n</h1>        
-                    <!--<h3>Frase de prueba img1</h3>-->
                 </hgroup>
               </div>
             </div>
@@ -26,7 +23,6 @@
               <div class="hero">        
                 <hgroup>
                     <h1>Fisioterapia</h1>        
-                    <!--<h3>Arte y Ciencia del tratamiento físico</h3>-->
                 </hgroup>       
               </div>
             </div>
@@ -35,15 +31,14 @@
               <div class="hero">        
                 <hgroup>
                     <h1>Calidad de vida</h1>        
-                    <!--<h3>Mejora tu calidad de vida</h3>-->
                 </hgroup>
               </div>
             </div>
           </div> 
         </div>
-        <section class="frase-home">
+        <section class="frase-home hidden-xs">
             <div class="container text-center">
-                <h2>AGENDE SU CONSULTA <span href="#" class="btn-social btn-outline"><i class="glyphicon glyphicon-phone-alt"></i></span> 2403 9392</h2>
+                <h2 class="wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.1s">AGENDE SU CONSULTA <span href="#" class="btn-social btn-outline"><i class="glyphicon glyphicon-phone-alt"></i></span> 2403 9392</h2>
                 <div class="col-md-1">
                   
                 </div>
@@ -63,7 +58,7 @@
                   <a href="{{articulo.link}}" class="btn btn-pagina btn-lg" role="button">{{articulo.btn}}</a>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-4 wow zoomIn thumb_articulos" data-wow-duration="0.5s" data-wow-delay="0.6s">
+              <div class="col-xs-12 col-sm-4 col-md-4 wow zoomIn thumb_articulos" data-wow-duration="0.5s" data-wow-delay="0.6s">
                   <h3>Noticias</h3>
                   <hr>
                   <div ng-repeat="noticia in noticias | limitTo:-1">
@@ -83,18 +78,18 @@
         
         <section class="frase-home">
             <div class="container">
-                <h1 class="text-center wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s"><em>Mejoramos tu calidad de vida</em></h1>
+                <h1 class="text-center wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.2s"><em>Mejoramos tu calidad de vida</em></h1>
             </div>
         </section>
         
         <section class="porq" ng-controller="mainCtrl">
           <div class="container contenedor-porq">
-            <h2 class="text-center wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">¿POR QUÉ REHAVITA?</h2>
+            <h2 class="text-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.2s">¿POR QUÉ REHAVITA?</h2>
             <hr>
           </div>
         </section>
         <section class="porq-desc">
-            <div class="container contenedor-desc-porq wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.3s">
+            <div class="container contenedor-desc-porq wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.3s">
                <h3>Somos una institución con 5 años de trayectoria en el medio, contamos con buen equipamiento que nos permite cumplir con cualquier indicación que haga el médico, cubrimos horarios amplios de atención, somos puntuales en las aplicaciones, se mantiene un buen relacionamiento respetuoso y personalizado con los pacientes</h3> 
             </div>
         </section>

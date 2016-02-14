@@ -28,7 +28,7 @@
               <p>A través de nuestro correo o con sólo marcar el teléfono <b>24039392</b> estaremos encantados de darles a conocer todos nuestros tratamientos y servicios complementarios.</p>
               <p>Requeridos *</p>
 
-              {{formData}}
+              <!--{{formData}}-->
               <p ng-class="result" style="padding: 15px; margin: 0;">{{ resultMessage }}</p>
               <!-- Name input-->
               <div class="form-group">
@@ -60,7 +60,7 @@
       
               <!-- Form actions -->
               <div class="form-group">
-                <div class="text-left">
+                <div class="cont-btn-enviar">
                   <button type="submit" class="btn btn-primary btn-lg btn-enviar" ng-disabled="!formContacto.$valid">Enviar</button> 
                 </div>
               </div>
@@ -68,22 +68,22 @@
             </form>
 
         </div>
-        <div class="col-md-6 contacto-items">
-            <div class="col-md-12 contacto-item text-center">
+        <div class="col-md-6 col-lg-6 contacto-items">
+            <div class="col-sm-4 col-md-12 col-lg-12 contacto-item text-center">
                 <div class="icon">
                     <i class="fa fa-phone fa-2x"></i>
                 </div>
                 <h2>Contacto</h2>
                 <p>(+598) 2403 9392</p>		
            </div>
-           <div class="col-md-12 contacto-item text-center">
+           <div class="col-sm-4 col-md-12 col-lg-12 contacto-item text-center">
                 <div class="icon">
                     <i class="fa fa-envelope fa-2x"></i>
                 </div>
                 <h2>Email</h2>
                 <p>administracion@rehavita.com.uy</p>		
            </div>
-           <div class="col-md-12 contacto-item text-center">
+           <div class="col-sm-4 col-md-12 col-lg-12 contacto-item text-center">
                 <div class="icon">
                     <i class="fa fa-map-marker  fa-2x"></i>
                 </div>

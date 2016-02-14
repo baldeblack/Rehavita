@@ -11,7 +11,7 @@
     </div>
 </section>
 <div class="container contenedor_equipamiento" ng-controller="mainCtrl">
-    <div class="col-md-4 equipos" ng-repeat="equipo in equipos">
+    <div class="col-md-4 equipos wow zoomIn" data-wow-duration="{{equipo.duracion}}" data-wow-delay="{{equipo.delay}}" ng-repeat="equipo in equipos">
         <div class="thumbnail">
           <h2 class="text-center">{{equipo.titulo}}</h2>
           <hr>
@@ -21,4 +21,11 @@
            <p>{{equipo.descripcion}}</p>
         </div>
     </div>
+</div>
+<div ng-controller="mfisicaCtrl">
+  <div owl-carousel="items" id="owl">
+      <div class="item g1 popup-with-zoom-anim">
+          <img class="lazyOwl" ng-src="{{item}}" alt="name">
+      </div>
+  </div>
 </div>

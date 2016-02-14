@@ -55,10 +55,10 @@
                   <div class="tab-pane fade" id="profile">
                       <h3 class="head text-center">NUESTRO EQUIPO</h3>
                       <div class="spacer"></div>
-                      <div class="contenido-item-somos">
+                      <div class="contenido-item-somos-bis">
                         <div ng-repeat="persona in personasEquipo" class="{{persona.class}}">
-                           <div class="thumbnail item-equipo-prof">
-                            <img ng-src="{{persona.img}}" alt="">
+                           <div class="thumbnail item-equipo-prof wow zoomIn" data-wow-duration="{{persona.duracion}}" data-wow-delay="{{persona.delay}}">
+                            <img ng-src="{{persona.img}}" class="img-responsive" alt="">
                             <h3>{{persona.nombre}}</h3>
                             <h4><small>{{persona.profesion}}</small></h4>
                             <h4>{{persona.area}}</h4>
@@ -75,13 +75,6 @@
                             <img class="" ng-src="{{inst.imgp}}"/>
                           </a>
                         </div>
-                        
-                        <!--<flex-slider flex-slide="s in slides2" control-nav="thumbnails">
-                            <li data-thumb="{{s}}">
-                                <img ng-src="{{s}}">
-                            </li>
-                        </flex-slider>-->
-                    
                       </div>
                   </div>
                   <div class="clearfix"></div>
@@ -100,19 +93,6 @@
     </div>
   </div>
 
- <!--  <div id="owl-demo" class="owl-carousel text-center">
-    <div class="item g1 popup-with-zoom-anim" href="#small-dialog">
-      <img class="lazyOwl" data-src="img/equipo/1.jpg" alt="name">
-    </div>
-    <div class="item g1 popup-with-zoom-anim" href="#small-dialog1">
-      <img class="lazyOwl" data-src="img/equipo/2.jpg" alt="name">
-    </div>
-    <div class="item g1 popup-with-zoom-anim" href="#small-dialog1">
-      <img class="lazyOwl" data-src="img/equipo/32.jpg" alt="name">
-    </div>
-  </div>
- -->
-
 </section>
 
 <script type="text/javascript">
@@ -120,6 +100,5 @@
   $(function(){
     $("a[title]").tooltip();
   });
-
 
 </script>
