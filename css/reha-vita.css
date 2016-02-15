@@ -1291,6 +1291,10 @@ img.lazyOwl {
     }
     .hero { width: 980px; }
     .titulo { width: 980px; }
+    .contenido-item-somos-bis{
+        width:70%;
+    }
+
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1315,6 +1319,10 @@ img.lazyOwl {
     .equipo-stilo .item-equipo-prof h3{
         font-size:20px !important;
     }
+    .contenido-item-somos-bis{
+        width:70%;
+    }
+
 }
 
 
