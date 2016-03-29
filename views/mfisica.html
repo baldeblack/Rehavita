@@ -11,12 +11,17 @@
     </div>
 </section>
 <div class="container contenedor_equipamiento" ng-controller="mainCtrl">
-    <div class="col-md-4 equipos wow zoomIn" data-wow-duration="{{equipo.duracion}}" data-wow-delay="{{equipo.delay}}" ng-repeat="equipo in equipos">
+    <div class="col-sm-6 col-md-4 col-lg-4 equipos wow zoomIn" data-wow-duration="{{equipo.duracion}}" data-wow-delay="{{equipo.delay}}" ng-repeat="equipo in equipos">
         <div class="thumbnail">
           <h2 class="text-center">{{equipo.titulo}}</h2>
-          <hr>
-           <div class="contendor-img-thumbnail border">
+           <hr>
+           <div class="contendor-img-thumbnail">
                <img ng-src="{{equipo.img}}" alt="">
+               <ul class="text-center" ng-hide="equipo.accesorios.length==0">
+                  <li>TRATAMIENTOS</li>
+                  <li><hr></li>
+                  <li ng-repeat="acces in equipo.accesorios">{{acces.ac}}</li>
+                </ul>
            </div> 
            <p>{{equipo.descripcion}}</p>
         </div>

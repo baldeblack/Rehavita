@@ -506,49 +506,80 @@ app.controller("mainCtrl", function ($scope,$http, uiGmapGoogleMapApi) {
             titulo: 'Neurodyn',
             descipcion: '',
             duracion: '0.5s',
-            delay: ''
+            delay: '0.1s',
+            accesorios: [
+                        {ac: "Corrientes Aussie"},
+                        {ac: "Corrientes Rusas"},
+                        {ac: "Fes"},
+                        {ac: "T.E.N.S"}
+                        ]
         },
         {
             img: 'img/equipamiento/equipo-rehavita-iontoforesis.jpg',
             titulo: 'Iontoforesis',
             descipcion: '',
             duracion: '0.5s',
-            delay: ''        
+            delay: '0.2s',
+            accesorios: [
+                        ]        
         },
         {
             img: 'img/equipamiento/equipo-rehavita-magneto.jpg',
             titulo: 'Magnetoterapia',
             descipcion: '',
             duracion: '0.5s',
-            delay: '0.1s'
+            delay: '0.3s',
+            accesorios: [
+                        ]
         },
         {
             img: 'img/equipamiento/equipo-rehavita-ultramax.jpg',
             titulo: 'Ultramax',
             descipcion: '',
             duracion: '0.5s',
-            delay: '0.2s'
+            delay: '0.4s',
+            accesorios: [
+                        {ac: "Corrientes Interferenciales"},
+                        {ac: "Corrientes Rusas"},
+                        {ac: "Ultrasonido"},
+                        {ac: "US combinado con corrientes"}
+                        ]
         },
         {
             img: 'img/equipamiento/equipo-rehavita-laser.jpg',
             titulo: 'Laser',
             descipcion: '',
             duracion: '0.5s',
-            delay: '0.3s'
+            delay: '0.5s',
+            accesorios: [
+                        ]
         },
         {
             img: 'img/equipamiento/equipo-rehavita-infrarojo.jpg',
             titulo: 'Infrarrojo',
             descipcion: '',
             duracion: '0.5s',
-            delay: '0.4s'
+            delay: '0.6s',
+            accesorios: [
+                        ]
         },
         {
             img: 'img/equipamiento/equipo-rehavita-ultrasono.jpg',
             titulo: 'Ultrasonido',
             descipcion: '',
             duracion: '0.5s',
-            delay: '0.5s'
+            delay: '0.7s',
+            accesorios: [
+                        ]
+        },
+        {
+            img: 'img/equipamiento/equipo-rehavita-tens-fes.jpg',
+            titulo: 'TENS/FES',
+            descipcion: '',
+            duracion: '0.5s',
+            delay: '0.8s',
+            accesorios: [
+                        ]
         }
 
     ];

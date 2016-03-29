@@ -771,7 +771,7 @@ footer{
     box-shadow: 0 0 1px #000;
 }
 .vista a.informacion:hover {
-    box-shadow: 0 0 5px #000
+    box-shadow: 0 0 5px #000;
 }
 .vista:hover img{ 
     transform: scale(1.1);
@@ -965,7 +965,6 @@ footer{
     padding-right: 20px;
 }
 .frase-mfisica h2{
-
     font-family: 'Dancing Script', cursive;
     color: white;
     text-shadow: 1px 1px 0 rgba(0,0,0,.75);
@@ -985,6 +984,54 @@ footer{
 
 .equipos .thumbnail{
     border-color: #A52998;
+    position:relative;
+    display: block;
+    transition: all 2s !important;
+    -webkit-transition: all 2s !important;
+    -o-transition: all 2s !important;
+}
+
+.contendor-img-thumbnail:after{
+    content:"";
+    opacity: 0;
+    background-color: rgba(209,52,164,0.9);
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.contendor-img-thumbnail ul{
+    position: absolute;
+    z-index: 2;
+    top:10px;
+    text-align: center;
+    width: 100%;
+    padding-left: 0px;
+    height: 0px;
+    margin:0px;
+    opacity: 0;
+    list-style:none;
+}
+.contendor-img-thumbnail:after, .contendor-img-thumbnail ul, .contendor-img-thumbnail ul li{
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.contendor-img-thumbnail:hover:after{
+    opacity: 1;
+}
+.contendor-img-thumbnail:hover ul{
+    opacity: 1;
+}
+.contendor-img-thumbnail ul li{
+    color:white;
+    font-size:20px;
+}
+.contendor-img-thumbnail ul li hr{
+    border-color: white;
+    width:50%;
 }
 
 .equipos img{
